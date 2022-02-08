@@ -1,0 +1,162 @@
+
+header,
+nav,
+aside,
+section, 
+footer
+#main
+.menumain
+.portafolio {
+    border: solid 1px black;
+}
+
+
+
+
+/*
+@media screen and (min-width: 320px) {}
+
+@media screen and (min-width: 480px) {}
+
+@media screen and (min-width: 600px) {}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1024px) {}
+
+@media screen and (min-width: 1200px) {}
+*/
+
+header {
+    grid-area: header;
+}
+nav {
+    grid-area: nav;
+}
+
+aside {
+    grid-area: aside;
+}
+section {
+    grid-area: section;
+}
+.contenedor-principal {
+    grid-area: contenedorP;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.menu-items {
+    display: flex;
+    list-style: none;
+}
+
+#main,
+section,
+.anuncio {
+    display: grid;
+    justify-content:space-between;
+    align-items: center;
+}
+
+
+nav,
+.textos header,
+.wave
+footer {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-items:center;
+}
+
+footer {
+    justify-content:center;
+}
+
+@media screen and (min-width: 320px) {
+    #main {
+        grid-template-columns:auto;
+        grid-template-rows: 20% 30% auto 10%;
+        grid-column-gap: 0;
+        grid-row-gap: 0;
+        grid-template-areas: "nav nav" "logo" "textos-header textos-header";
+    }
+
+    .textos-header {
+        display: flex;
+        align-items: center;
+    }
+
+    .menumain {
+        grid-template-columns: 15% auto 15%;
+        grid-template-rows: 15% auto;
+        grid-column-gap: 0px;
+        grid-row-gap: 0;
+        grid-template-areas: "aside" "section";
+    }
+
+    section .portafolio {
+        grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+        grid-template-rows: 20% auto auto 10%;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        grid-template-areas: "";
+    }
+    section {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+    aside,
+    #ulNav,
+    #inputHeader {
+        display: none;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    #menuBurger {
+        padding: 30px;
+    }
+    #inputNav {
+        margin: 10px;
+    }
+    .hover-galeria {
+        justify-self: stretch;
+        align-self: start;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #main {
+        grid-template-columns: 15% auto;
+        grid-template-rows: 15% 10% auto 15%;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        grid-template-areas: "header header" "nav nav" "aside section" "footer footer";
+    }
+    section {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+    #inputNav,
+    #menuBurger {
+        display: none;
+    }
+    aside,
+    #inputHeader,
+    #ulNav {
+        display: block;
+    }
+}
