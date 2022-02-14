@@ -1,6 +1,6 @@
-*{
-  /*margin: 0;
-  padding: 0; */
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 /* Asignamos margenes 0 para pegar todo a los bordes */
@@ -35,177 +35,98 @@ body {
 header {
   width: 100%;
   height: 470px;
-  background: #2980b9; 
-  background: -webkit-linear-gradient(
-    to right,
-    hsl(0, 0%, 100%),
-    hsl(196, 93%, 70%),
-    hsl(204, 64%, 44%)
-  ); 
+  background: #2980b9; /* fallback for old browsers */
   background: linear-gradient(
-    to right,
-    hsla(0, 0%, 100%, 0.63),
-    hsla(196, 93%, 70%, 0.788),
-    hsla(204, 64%, 44%, 0.322)
-  ), url(../images/Cofee1920.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-   
+      to right,
+      hsla(0, 0%, 100%, 0.63),
+      hsla(196, 93%, 70%, 0.788),
+      hsla(204, 64%, 44%, 0.322)
+    ),
+    url(../images/Cofee1920.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
 }
 
-.Logo{
-  /*display: flex;*/
-  height: 100px;
-  /*flex-wrap: wrap; */
-  align-content: flex-start;
-  /*padding: 15px;*/
-
+.Logo {
+  text-align: left;
+  padding: 20px 5px 0;
+  width: 5%;
+  position: fixed;
+  z-index: 100;
 }
-nav{
+nav {
   width: 100%;
   position: fixed;
   z-index: 100;
-  /* margin: 0 180px 0; */
+  margin: 0 auto;
   background-color: rgba(41, 53, 214, 0.999);
-  list-style: none;
-  /*padding: 0 650px 0;*/
 }
 
-nav ul a{
-  color: white;
+nav ul a {
+  color: skyblue;
   font-size: 22px;
   font-weight: 300; /* ancho de la fuente */
   text-decoration: none; /* sacamos la decoración */
-  /*margin-right: 15px; */ /* separador entre menus */
+  margin-right: 15px; /* separador entre menus */
   /* background-color: rgba(41, 151, 214, 0.5); /* color de fondo */
   border-radius: 5px 5px 5px 5px; /* bordes redondeados */
-  list-style: none;  
 }
 
-
-nav ul a:hover{
-  text-decoration: underline;  /* para que se marque cuando pasamos el mouse */
+nav ul li a:hover {
+  text-decoration: underline; /* para que se marque cuando pasamos el mouse */
   cursor: pointer;
   background-color: #1e81b9;
-  list-style: none;
 }
 
-
-header .textos-header{
+header .textos-header {
+  align-items: center;
   text-align: center;
-  /*justify-content: center;*/
-  /*position:center;*/
+  justify-content: center;
+  position: center;
   text-decoration: underline;
-  margin-top: -60px;
-  margin-bottom: 120px;
-  
+  padding-top: 25px; /* bajo texto principal de la pagina */
 }
 
-.textos-header h1{
+.textos-header h1 {
   font-size: 70px;
   color: darkblue;
 }
 
-.textos-header h2{
+.textos-header h2 {
   font-size: 30px;
   font-weight: 300;
   color: darkblue;
 }
 
-.textos-header h4{
+.textos-header h4 {
   font-size: 20px;
   font-weight: 300;
   color: darkblue;
 }
 
-
-
-.titular-tienda{  /* acomodo el titular de la Tienda online */
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.wave{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top-color: blueviolet border= "2";
 }
 
 /* fondo */
 
-#fondo{
+#fondo {
   background-image: url(../images/cuaderno1920.jpg);
   background-attachment: fixed;
   position: relative;
-  height: 100%;
-  width: 100%;
 }
 
-
-.titular-tienda2{   /* acomodo el titular de Nuestros Precios */
-  font-size: 50px;
-  color: darkblue;        
-  margin-bottom: 30px;
-  padding: 0 750px 0;
-  background-color: #1e80b865; 
-}
-
-
-.titular-nosotros2{  /* acomodo el titular de Quienes Somos */
-  font-size: 50px;
-  color: darkblue;        
-  margin-bottom: 30px;
-  padding: 0 750px 0;
-  background-color: #b0ccdd65;
-}
-
-.texto-nosotros{      /* acomodo el texto Quienes Somos?*/
-  text-align: center;
-  font-size: 25px;
-  margin: 30px 700px 30px;
-  background-color: hsla(200, 29%, 92%, 0.664);
-
-}
-
-.titular-servicio2{   /* acomodo el titular de Servicio Tecnico */
-  font-size: 50px;
-  color: darkblue;        
-  margin-bottom: 30px;
-  padding: 0 750px 0;
-  background-color: #b0ccdd65;
-}
-
-.texto-servicio{       /* acomodo el texto servicio tecnico*/
-  text-align: center;
-  font-size: 25px;
-  margin: 30px 700px 0;
-  padding: 0 0 300px 0;
-  background-color: hsla(200, 29%, 92%, 0.664);
-}
-
-.contraste-contacto{
-  text-align: center;
-  font-size: 25px;
-  margin: 0 700px 0;
-  padding: 0 0 300px 0;
-  background-color: hsla(200, 29%, 92%, 0.664);
-}
-
-label{               /* trato de alinear las etiquetas de registro en Contacto*/  
-  display: inline-block;
-  width: 80px;
-  margin-right: 40px;
-}
-
-.contenedor-principal{
+.Contenedor-principal {
   display: flex;
-  justify-content:center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 0 4px;
 }
 
-.Marcas{
+.Marcas {
   font-size: 25px;
   font-weight: 300;
   color: darkblue;
@@ -215,36 +136,33 @@ label{               /* trato de alinear las etiquetas de registro en Contacto*/
   background-color: hsla(202, 72%, 42%, 0.397);
 }
 
-.titulo3{
-  text-align: center;   /* display: inline; */
+.titulo3 {
+  text-align: center; /* display: inline; */
   object-position: center;
-  justify-items: center;
   color: darkblue;
   font-size: 30px;
-  /*margin: 0 180px 0;*/
-  Padding: 0 20px 0;
+  margin: 0 180px 0;
+  padding: 0 20px 0;
   background-color: rgba(30, 128, 185, 0.363);
-} 
-  
-.contenedor-intro iframe{
-  padding-bottom: 20px;
-  padding-top: 20px;
 }
 
-
-.video-nosotros{
-    padding-top: 40px;
-    padding-bottom: 100px;
+.contenedor-intro iframe {
+  /*padding-bottom: 5px;
+  padding-top: 5px;*/
+  margin: 0 auto;
+  width:600px;
+  height:350px;
+  display: flex;
+  justify-items: center;
 }
-
 
 /* galeria de productos */
 
-.portafolio{
-    background:hsla(209, 76%, 68%, 0.705);
+.portafolio {
+  background: hsla(209, 76%, 68%, 0.705);
 }
 
-.titulo1{
+.titulo1 {
   color: darkblue;
   font-size: 30px;
   text-align: center;
@@ -252,35 +170,35 @@ label{               /* trato de alinear las etiquetas de registro en Contacto*/
   margin-top: -20px;
 }
 
-.galeria{
+.galeria {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-.group {
+.group,
+.group1 {
   display: flex;
   width: 90vw;
   justify-content: center;
-  gap: 2em; 
+  gap: 2em;
 }
 
-.imagen-1{
+.imagen-1 {
   width: auto;
   height: auto;
   margin-bottom: 50px;
-  overflow: hidden;  /*superpongo las imagenes*/
+  overflow: hidden; /*superpongo las imagenes*/
   position: relative;
   cursor: pointer;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 8);
 }
 
-.imagen-1 > img{
+.imagen-1 > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display:flex;
-  justify-items: auto;
+  display: block;
 }
 
 .hover-galeria {
@@ -289,23 +207,23 @@ label{               /* trato de alinear las etiquetas de registro en Contacto*/
   width: 100%;
   height: 100%;
   transform: scale(0);
-  background: hsla(273,91%,27%, 0.7);
-  transition: transform .5s;
+  background: hsla(273, 91%, 27%, 0.7);
+  transition: transform 0.5s;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  }
+}
 
-.hover-galeria img{
+.hover-galeria img {
   width: 50px;
 }
 
-.hover-galeria p{
+.hover-galeria p {
   color: #fff;
 }
 
-.imagen-1:hover .hover-galeria{
+.imagen-1:hover .hover-galeria {
   transform: scale(1);
 }
 
@@ -317,16 +235,14 @@ label{               /* trato de alinear las etiquetas de registro en Contacto*/
   margin-bottom: 60px;
 }
 
-
-
-footer{
+footer {
   background: rgb(5, 31, 78);
-  padding:  60px 0 30px 0;
+  padding: 60px 0 30px 0;
   margin: auto;
   overflow: hidden;
 }
 
-.contenedor-footer{
+.contenedor-footer {
   display: flex;
   width: 90%;
   justify-content: space-evenly;
@@ -335,26 +251,20 @@ footer{
   border-bottom: 1px solid #2980b9;
 }
 
-.contacto{
+.contacto {
   color: white;
   font-size: 22px;
   font-weight: 400; /* ancho de la fuente */
   text-decoration: none; /* sacamos la decoración */
   margin-right: 15px; /* separador entre menus */
-  /* background-color: hsl(202, 68%, 50%);*/  /* color de fondo */
+  /* background-color: hsl(202, 68%, 50%);*/ /* color de fondo */
   /* border-radius: 5px 5px 5px 5px; /* bordes redondeados */
-} 
-
-.linkcontacto {
-  text-decoration:none;
-  font-size: bold;
-  color: white;
 }
 
-.contacto :hover{
-  text-decoration: underline;  /* para que se marque cuando pasamos el mouse */
+.contacto :hover {
+  text-decoration: underline; /* para que se marque cuando pasamos el mouse */
   cursor: pointer;
-  background-color: #2997d6;
+  background-color: rgb(41, 151, 214);
 }
 
 /* .facebook-logo{
@@ -366,13 +276,247 @@ footer{
   width: 60px; 
 } */
 
-
-.titulo-final{
+.titulo-final {
   text-align: center;
   font-size: 15px;
   margin: 20px 0 0 0;
   color: #9e9797;
 }
 
+/*----------------Se aplica Grid---------------------------*/
 
+header,
+nav,
+section,
+footer .portafolio {
+  border: solid 1px black;
+}
 
+header {
+  grid-area: header;
+}
+nav {
+  grid-area: nav;
+}
+
+/* aside {
+  grid-area: aside;
+} */
+section {
+  grid-area: section;
+}
+.contenedor-principal {
+  grid-area: contenedorP;
+}
+
+footer {
+  grid-area: footer;
+}
+.foto0 {
+  grid-area: foto0;
+}
+.foto1 {
+  grid-area: foto1;
+}
+.foto2 {
+  grid-area: foto2;
+}
+.foto3 {
+  grid-area: foto3;
+}
+.foto4 {
+  grid-area: foto4;
+}
+.foto5 {
+  grid-area: foto5;
+}
+
+nav i.fas {
+  display: none;
+}
+nav ul li {
+  text-decoration: none;
+  display: inline;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#buscador2 {
+  /* se coloca id directo sin "input" */
+  display: none;
+}
+
+/* ------------------media queries 320px ------------------*/
+
+@media screen and (max-width: 320px) {
+  header {
+    background: #2980b9; /* fallback for old browsers */
+    background: linear-gradient(
+        to right,
+        hsla(0, 0%, 100%, 0.63),
+        hsla(196, 93%, 70%, 0.788),
+        hsla(204, 64%, 44%, 0.322)
+      ),
+      url(../images/Cofee1920_1.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    height: 200px;
+    /*background-size: cover;*/
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #fondo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../images/cuaderno1920.jpg);
+    background-attachment: fixed;
+    position: relative;
+    width: fit-content;
+    height: 320px;
+  }
+
+  .textos-header h1 {
+    font-size: 25px;
+    color: darkblue;
+  }
+
+  .textos-header h2 {
+    font-size: 15px;
+    font-weight: 300;
+    color: darkblue;
+  }
+
+  .textos-header h4 {
+    font-size: 15px;
+    font-weight: 300;
+    color: darkblue;
+  }
+
+  .contenedor-principal,
+  .Marcas,
+  .titulo3,
+  .contenedor-intro {
+    display: flex;
+    flex-direction: column;
+    vertical-align: center;
+    justify-items: center;
+  }
+
+  .Marcas {
+    font-size: 15px;
+    font-weight: 300;
+    color: darkblue;
+    text-align: center;
+    object-position: center;
+    padding: 10px 0;
+    background-color: hsla(202, 72%, 42%, 0.397);
+  }
+
+  .titulo3 {
+    text-align: center; /* display: inline; */
+    object-position: center;
+    color: darkblue;
+    font-size: 15px;
+    margin: 0 2px 0;
+    padding: 0;
+    background-color: rgba(30, 128, 185, 0.363);
+  }
+  .contenedor-intro {
+    width: 320px;
+    height: 190px;
+  }
+  .videoindex {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin: 0 20px 0;
+    width: 200px !important;
+    height: 150px;
+  }
+
+  /*.contenedor-principal {
+    height: 150px;
+  }*/
+  .group {
+    /*flex-direction: column;*/
+    grid-area: group;
+  }
+  .group1 {
+    /*flex-direction: column;*/
+    grid-area: group1;
+  }
+  .image-1 {
+    grid-area: imagen;
+  }
+
+  nav i.fas {
+    display: block;
+    font-size: 30px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav {
+    width: auto;
+    margin: 0 0 0 82%;
+    padding: 10px;
+    grid-area: nav;
+  }
+
+  .Logo {
+    text-align: left;
+    padding: 0 2px 0;
+    width: 18%;
+    position: fixed;
+    z-index: 100;
+  }
+
+  #buscador {
+    align-items: center;
+    z-index: 100;
+  }
+
+  .galeria {
+    grid-area: galeria;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 10%;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-areas:
+      "group"
+      "group1";
+  }
+
+  .group {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 33% 33% 33%;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    grid-template-areas:
+      "foto0"
+      "foto1"
+      "foto2";
+  }
+  .group1 {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40% 33% 33%;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    grid-template-areas:
+      "foto3"
+      "foto4"
+      "foto5";
+  }
+}
