@@ -285,12 +285,12 @@ footer {
 
 /*----------------Se aplica Grid---------------------------*/
 
-header,
+/*header,
 nav,
 section,
 footer .portafolio {
   border: solid 1px black;
-}
+}*/
 
 header {
   grid-area: header;
