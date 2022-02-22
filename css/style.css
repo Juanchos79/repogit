@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* Asignamos margenes 0 para pegar todo a los bordes */
+/* Asignamos margenes 0 para pegar todo a los bordes */  
 
 /* Asignamos fuente principal para Titulos */
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Poppins:wght@600&display=swap");
@@ -16,7 +16,7 @@ body {
 .contenedor {
   padding: 60px 0;
   width: 90%;
-  max-width: 1000px;
+  max-width: 900px;
   margin: auto;
   overflow: hidden;
 }
@@ -49,6 +49,8 @@ header {
 }
 
 .Logo {
+  /*display: flex;
+  justify-content: left; */
   text-align: left;
   padding: 20px 5px 0;
   width: 5%;
@@ -57,40 +59,44 @@ header {
 }
 nav {
   width: 100%;
+  margin-bottom: 0;
   position: fixed;
-  z-index: 100;
+  z-index: 20;
   margin: 0 auto;
   background-color: rgba(41, 53, 214, 0.999);
+  height: 36px;
 }
 
 nav ul a {
   color: skyblue;
   font-size: 22px;
-  font-weight: 300; /* ancho de la fuente */
-  text-decoration: none; /* sacamos la decoración */
-  margin-right: 15px; /* separador entre menus */
+  font-weight: 300;   /*ancho de la fuente */
+  text-decoration: none; /* sacamos la decoración 
+  margin-right: 15px; /* separador entre menus 
   /* background-color: rgba(41, 151, 214, 0.5); /* color de fondo */
-  border-radius: 5px 5px 5px 5px; /* bordes redondeados */
+  border-radius: 5px 5px 5px 5px;  /*bordes redondeados */
 }
 
 nav ul li a:hover {
-  text-decoration: underline; /* para que se marque cuando pasamos el mouse */
+  text-decoration: underline;  /*para que se marque cuando pasamos el mouse */
   cursor: pointer;
   background-color: #1e81b9;
-}
+} 
 
 header .textos-header {
   align-items: center;
   text-align: center;
   justify-content: center;
   position: center;
+
   text-decoration: underline;
-  padding-top: 25px; /* bajo texto principal de la pagina */
+  padding-top: 140px; /* bajo texto principal de la pagina */
 }
 
 .textos-header h1 {
   font-size: 70px;
   color: darkblue;
+  
 }
 
 .textos-header h2 {
@@ -112,8 +118,25 @@ header .textos-header {
   border-top-color: blueviolet border= "2";
 }
 
-/* fondo */
 
+
+.titulo-service{
+  text-align: center;
+  justify-content: center;
+}
+#texto-servicio .fuente-texto {
+  color:#fff;
+  font-size: 30px;
+  Display: flex;
+  border-style: outset;
+  background-color: hsla(204, 64%, 44%, 0.486);
+  margin: 0 10em;
+  width: 190px;
+  
+  
+  }
+
+/* fondo */
 #fondo {
   background-image: url(../images/cuaderno1920.jpg);
   background-attachment: fixed;
@@ -141,8 +164,8 @@ header .textos-header {
   object-position: center;
   color: darkblue;
   font-size: 30px;
-  margin: 0 180px 0;
-  padding: 0 20px 0;
+  margin: 0 auto 0;
+  padding: 0 2px 0;
   background-color: rgba(30, 128, 185, 0.363);
 }
 
@@ -180,6 +203,7 @@ header .textos-header {
 .group1 {
   display: flex;
   width: 90vw;
+  margin: 0 auto;
   justify-content: center;
   gap: 2em;
 }
@@ -235,10 +259,28 @@ header .textos-header {
   margin-bottom: 60px;
 }
 
+.contraste-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-items:center;
+  width: 50%;
+}
+.titulo-contacto {
+  color: aliceblue;
+  text-underline-position: auto;
+  text-shadow: #1e81b9;
+}
+
+.form-check-label {
+  color: aliceblue;
+  text-underline-position: auto;
+  background: rgb(5, 31, 78);
+}
+
 footer {
   background: rgb(5, 31, 78);
   padding: 60px 0 30px 0;
-  margin: auto;
+  margin: 0;
   overflow: hidden;
 }
 
@@ -267,20 +309,20 @@ footer {
   background-color: rgb(41, 151, 214);
 }
 
-/* .facebook-logo{
-  width: 50px;
-  margin-top: 1px;
-}
-
-.facebook-logo:hover{
-  width: 60px; 
-} */
 
 .titulo-final {
   text-align: center;
   font-size: 15px;
   margin: 20px 0 0 0;
   color: #9e9797;
+}
+
+/* -------------footer de boostrap -----------*/ 
+
+#footboos {     
+  margin: 0;
+  padding: 0;
+  /*background-color: red;*/
 }
 
 /*----------------Se aplica Grid---------------------------*/
@@ -299,9 +341,6 @@ nav {
   grid-area: nav;
 }
 
-/* aside {
-  grid-area: aside;
-} */
 section {
   grid-area: section;
 }
@@ -312,7 +351,7 @@ section {
 footer {
   grid-area: footer;
 }
-.foto0 {
+.foto0 {                 /* fotos de la galeria del index */
   grid-area: foto0;
 }
 .foto1 {
@@ -349,7 +388,7 @@ nav ul {
   display: none;
 }
 
-/* ------------------media queries 320px ------------------*/
+/* ------------------media queries 320px ------------------ */
 
 @media screen and (max-width: 320px) {
   header {
@@ -363,13 +402,13 @@ nav ul {
       url(../images/Cofee1920_1.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
     height: 200px;
-    /*background-size: cover;*/
+    background-size: cover;
     background-attachment: fixed;
     position: relative;
     overflow: hidden;
   }
 
-  #fondo {
+ #fondo {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -380,9 +419,15 @@ nav ul {
     height: 320px;
   }
 
+  
+  header .textos-header{
+    padding-top: 25px;
+  }
+  
   .textos-header h1 {
     font-size: 25px;
     color: darkblue;
+    padding-top: 10px;
   }
 
   .textos-header h2 {
@@ -403,8 +448,8 @@ nav ul {
   .contenedor-intro {
     display: flex;
     flex-direction: column;
-    vertical-align: center;
-    justify-items: center;
+    /*vertical-align: center;*/
+    /*justify-items: center;*/
   }
 
   .Marcas {
@@ -415,9 +460,10 @@ nav ul {
     object-position: center;
     padding: 10px 0;
     background-color: hsla(202, 72%, 42%, 0.397);
-  }
+  } */
 
   .titulo3 {
+    justify-content: space-around;
     text-align: center; /* display: inline; */
     object-position: center;
     color: darkblue;
@@ -438,15 +484,13 @@ nav ul {
     height: 150px;
   }
 
-  /*.contenedor-principal {
-    height: 150px;
-  }*/
-  .group {
-    /*flex-direction: column;*/
-    grid-area: group;
+  .contenedor-principal {
+    height: 300px;
   }
+  .group {
+    grid-area: group;
+  } 
   .group1 {
-    /*flex-direction: column;*/
     grid-area: group1;
   }
   .image-1 {
@@ -467,6 +511,8 @@ nav ul {
     margin: 0 0 0 82%;
     padding: 10px;
     grid-area: nav;
+    padding-bottom: 35px;
+    padding-top: 5px;
   }
 
   .Logo {
@@ -479,10 +525,11 @@ nav ul {
 
   #buscador {
     align-items: center;
-    z-index: 100;
+    z-index: 20;
   }
 
   .galeria {
+    display: grid;
     grid-area: galeria;
     grid-template-columns: 1fr;
     grid-template-rows: 10% 10%;
@@ -497,6 +544,7 @@ nav ul {
     display: grid;
     justify-content: space-between;
     align-items: center;
+    width: 65vw;
     grid-template-columns: 1fr;
     grid-template-rows: 33% 33% 33%;
     grid-column-gap: 10px;
@@ -510,6 +558,7 @@ nav ul {
     display: grid;
     justify-content: space-between;
     align-items: center;
+    width: 65vw;
     grid-template-columns: 1fr;
     grid-template-rows: 40% 33% 33%;
     grid-column-gap: 10px;
@@ -519,4 +568,4 @@ nav ul {
       "foto4"
       "foto5";
   }
-}
+} 
