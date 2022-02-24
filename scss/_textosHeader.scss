@@ -1,0 +1,19 @@
+@import 'variables';
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Poppins:wght@600&display=swap");
+
+body {
+    font-family: $tipografiatotal;
+}
+
+header {
+   .h1{
+        font-size: $textosh1;
+   }
+   .h2{
+        font-size: $textosh2;
+    }
+    .h4{
+        font-size: $textosh4;
+    }
+}
+

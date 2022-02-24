@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AECA,OAAO,CAAC,wGAAI;AAEZ,AAAA,IAAI,CAAC;EACD,WAAW,EDJG,QAAQ,EAAE,OAAO;CCKlC;;AAED,AACG,MADG,CACH,GAAG,CAAA;EACE,SAAS,EDLN,IAAI;CCMX;;AAHJ,AAIG,MAJG,CAIH,GAAG,CAAA;EACE,SAAS,EDNN,IAAI;CCOV;;AANL,AAOI,MAPE,CAOF,GAAG,CAAA;EACC,SAAS,EDPN,IAAI;CCQV",
+    "sources": [
+        "../scss/style.scss",
+        "../scss/_variables.scss",
+        "../scss/_textosHeader.scss",
+        "../scss/_variables.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
