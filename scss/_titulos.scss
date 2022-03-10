@@ -1,0 +1,47 @@
+/* asignamos propiedades de titulos varios */
+.titulo {
+  color: darkblue;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 5px;
+}
+.titulo-service {
+  text-align: center;
+  justify-content: center;
+}
+.titulo1 {
+  color: darkblue;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: -20px;
+}
+
+.titulo2 {
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.titulo3 {
+  text-align: center; /* display: inline; */
+  object-position: center;
+  color: darkblue;
+  font-size: 30px;
+  margin: 0 180px 0;
+  padding: 0 20px 0;
+  background-color: rgba(30, 128, 185, 0.363);
+}
+
+.titulo-contacto {
+  color: aliceblue;
+  text-underline-position: auto;
+  text-shadow: #1e81b9;
+}
+.copyrigth {
+  text-align: center;
+  font-size: 15px;
+  margin: 20px 0 0 0;
+  color: #9e9797;
+}

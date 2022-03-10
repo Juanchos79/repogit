@@ -1,0 +1,37 @@
+/*----------------Se aplica Grid---------------------------*/
+
+header {
+  grid-area: header;
+}
+nav {
+  grid-area: nav;
+}
+
+section {
+  grid-area: section;
+}
+.contenedor-principal {
+  grid-area: contenedorP;
+}
+
+footer {
+  grid-area: footer;
+}
+.foto0 {
+  grid-area: foto0;
+}
+.foto1 {
+  grid-area: foto1;
+}
+.foto2 {
+  grid-area: foto2;
+}
+.foto3 {
+  grid-area: foto3;
+}
+.foto4 {
+  grid-area: foto4;
+}
+.foto5 {
+  grid-area: foto5;
+}

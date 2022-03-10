@@ -1,19 +1,86 @@
-@import 'variables';
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Poppins:wght@600&display=swap");
+@import '_variables';
 
 body {
     font-family: $tipografiatotal;
 }
 
+
+
+/* formato del header */
 header {
-   .h1{
-        font-size: $textosh1;
-   }
-   .h2{
-        font-size: $textosh2;
+    width: 100%;
+    height: 470px;
+    background: #2980b9; /* fallback for old browsers */
+    background: linear-gradient(
+        to right,
+        hsla(0, 0%, 100%, 0.63),
+        hsla(196, 93%, 70%, 0.788),
+        hsla(204, 64%, 44%, 0.322)
+        ),
+        url(../images/Cofee1920.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+   .textos-header {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        position: center;
+        text-decoration: underline;
+        padding-top: 140px; /* bajo texto principal de la pagina */
+        
+        
+
+        .h1 {
+            font-size: $textosh1;   /* asignamos variable tamaño */
+            color: $textoazul;  /* asignamos variable color */
+        }    
+        .h2 {
+            font-size: $textosh2;   
+            font-weight: $textosh2;
+            color: $textoazul;  
+        }
+    
+        .h4 {
+            font-size: $textosh4;   
+            font-weight: $textosh4; 
+            color: $textoazul; 
+        }
     }
-    .h4{
-        font-size: $textosh4;
-    }
+        
 }
+
+
+nav {
+    width: 100%;
+    margin-bottom: 0;
+    position: fixed;
+    z-index: 20;
+    margin: 0 auto;
+    background-color: rgba(41, 53, 214, 0.999);
+    height: 36px;
+  
+    ul { 
+        a {
+        color: skyblue;
+        font-size: 22px;
+        font-weight: 300;   /*ancho de la fuente */
+        text-decoration: none; /* sacamos la decoración 
+        margin-right: 15px; /* separador entre menus 
+        /* background-color: rgba(41, 151, 214, 0.5); /* color de fondo */
+        border-radius: 5px 5px 5px 5px;  /*bordes redondeados */
+        }
+    
+        li {
+            a {
+                &:hover{
+                    text-decoration: underline;  /*para que se marque cuando pasamos el mouse */
+                    cursor: pointer;
+                    background-color: #1e81b9;
+                }
+            }       
+        }           
+    }
+} 
 
