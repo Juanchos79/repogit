@@ -96,6 +96,7 @@ nav ul li a:hover {
 .titulo-service {
   text-align: center;
   justify-content: center;
+  margin: auto;
 }
 
 .titulo1 {
@@ -128,13 +129,6 @@ nav ul li a:hover {
   color: aliceblue;
   text-underline-position: auto;
   text-shadow: #1e81b9;
-}
-
-.copyrigth {
-  text-align: center;
-  font-size: 15px;
-  margin: 20px 0 0 0;
-  color: #9e9797;
 }
 
 /*----------------Se aplica Grid---------------------------*/
@@ -413,7 +407,7 @@ nav ul li {
     color: darkblue;
   }
   .textos-header h2 {
-    font-size: 15px !important;
+    font-size: 15px;
     font-weight: 300;
     color: darkblue;
   }
