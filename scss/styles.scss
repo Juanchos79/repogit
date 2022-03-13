@@ -2,7 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
 }
+
 /* Asignamos margenes 0 para pegar todo a los bordes */
 
 @import "_variables";
@@ -11,6 +14,10 @@
 @import "_titulos";
 @import "_grid320";
 
+* {
+  font-family: $tipografiatotal;
+  /*z-index: 100;*/
+}
 
 /* Asignamos fuente principal para Titulos */
 
@@ -28,11 +35,11 @@
 /* Asignamos propiedades a la clase titulo */
 
 .Logo {
-  text-align: left;
-  padding: 20px 5px 0;
+  display: flex;
+  margin: 2px 0 0 0;
   width: 5%;
-  position: fixed;
   z-index: 100;
+  position: fixed;
 }
 
 .wave {
@@ -195,7 +202,7 @@ footer {
       color: #9e9797;
     }
   }
-} 
+}
 
 /* margenes 0 para contenedor de Footer en Boostrap */
 
@@ -206,8 +213,8 @@ footer {
 
 /* aplicamos estilo a menu nav 320 px */
 
-nav {
-  i.fas {
+/*nav {
+  .navbar {
     display: none;
   }
 
@@ -221,10 +228,21 @@ nav {
       display: inline;
     }
   }
-}
+}*/
 #buscador2 {
   /* se coloca id directo sin "input" */
   display: none;
+}
+
+@media screen and (max-width: 810px) {
+  .Logo {
+    display: flex;
+    margin: 2px 0 0 5px;
+    width: 5%;
+    position: right;
+    
+    
+  }
 }
 
 /* ------------------media queries 320px ------------------ */
@@ -256,22 +274,19 @@ nav {
     width: fit-content;
     height: 320px;
   }
-  .textos-header{
-
-    h1 {
+  .textos-header {
+    .T1 {
       font-size: $textosh1320;
       color: $textoazul;
-
     }
 
-    h2 {
+    .T2 {
       font-size: $textosh2320;
       font-weight: 300;
       color: $textoazul;
-      
     }
 
-    h4 {
+    .T4 {
       font-size: $textosh4320;
       font-weight: 300;
       color: $textoazul;
@@ -303,7 +318,7 @@ nav {
     text-align: center; /* display: inline; */
     object-position: center;
     color: darkblue;
-    font-size: 15px;
+    font-size: 12px;
     margin: 0 2px 0;
     padding: 0;
     background-color: rgba(30, 128, 185, 0.363);
@@ -332,34 +347,62 @@ nav {
   .image-1 {
     grid-area: imagen;
   }
-
-  /* nav de vista 320px */
-
-  /* es solamente un icono de vista no funciona y 
-  no tiene nav */
-
-  nav {
-    width: auto;
-    margin: 0 0 0 82%;
-    padding: 10px;
-    grid-area: nav;
-    i.fas {
-      display: block;
-      font-size: 30px;
-    }
-
-    ul {
-      display: none;
-    }
-  }
-
   .Logo {
-    text-align: left;
-    padding: 0 2px 0;
-    width: 18%;
+    display: flex;
+    margin: 2px 0 0 5px;
+    width: 15%;
     position: fixed;
     z-index: 100;
   }
+
+
+  /* nav de vista 320px */
+
+  .menunav {
+    /*background-color: rgba(41, 53, 214, 0.999);*/
+    box-shadow: 0px 1px 1px rgba(18, 25, 131, 0.999);
+    Padding: rigth;
+    margin: 300px 0px 20px 0;
+    position: fixed;
+    z-index:150;
+  }
+  .hamburguesa {
+    /*width: 100%;*/
+    margin: 5px;
+    /*position:relative;*/
+    z-index: 100;
+    /*margin: auto;*/
+    /*background-color: rgba(41, 53, 214, 0.999);*/
+    /*height: 10px;*/
+
+    ul {
+      a {
+        color: skyblue;
+        font-size: 15px;
+        font-weight: 150; /*ancho de la fuente */
+        /*text-decoration: none; *//* sacamos la decoración 
+        margin-right: 15px; /* separador entre menus 
+        /* background-color: rgba(41, 151, 214, 0.5); /* color de fondo */
+        border-radius: 10px 5px 5px 5px; /*bordes redondeados */
+      }
+
+      li {
+        a {
+          &:hover {
+            text-decoration: underline; /*para que se marque cuando pasamos el mouse */
+            cursor: pointer;
+            background-color: #1e81b9;
+          }
+        }
+      }
+    }
+  }
+
+  .conteinernav {
+    position: fixed;
+  }
+
+  
 
   #buscador {
     align-items: center;

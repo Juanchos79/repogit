@@ -4,8 +4,6 @@ body {
     font-family: $tipografiatotal;
 }
 
-
-
 /* formato del header */
 header {
     width: 100%;
@@ -32,17 +30,17 @@ header {
         
         
 
-        .h1 {
+        .T1 {
             font-size: $textosh1;   /* asignamos variable tamaño */
             color: $textoazul;  /* asignamos variable color */
         }    
-        .h2 {
+        .T2 {
             font-size: $textosh2;   
             font-weight: $textosh2;
             color: $textoazul;  
         }
     
-        .h4 {
+        .T4 {
             font-size: $textosh4;   
             font-weight: $textosh4; 
             color: $textoazul; 
@@ -52,14 +50,16 @@ header {
 }
 
 
-nav {
-    width: 100%;
-    margin-bottom: 0;
-    position: fixed;
-    z-index: 20;
-    margin: 0 auto;
+.hamburguesa {
+    /*width: 100%;*/
+    margin: 60px;
+    /*padding:60px; */
+    position: relative;
+    z-index: 100;
+    /*margin: 0 auto;*/
+    /*background-color: rgba(41, 53, 214, 0.999);*/
+    /*height: 40px;*/
     background-color: rgba(41, 53, 214, 0.999);
-    height: 36px;
   
     ul { 
         a {
@@ -84,3 +84,14 @@ nav {
     }
 } 
 
+.colorMenu {
+    color: #f7fad9 !important;
+    font-weight: bold !important;
+    font-size: 20px !important;
+    border-radius: 20%;
+  }
+/*  color y tamaño al menu burger */
+.colorBurger {
+    color: #ffffff;
+    font-size: 1.5rem  
+}

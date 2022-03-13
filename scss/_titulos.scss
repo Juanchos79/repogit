@@ -1,10 +1,10 @@
 /* asignamos propiedades de titulos varios */
+@import "_extend";
+@import "_mixin";
+
 .titulo {
-  color: darkblue;
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 25px;
-  margin-top: 5px;
+  @extend %titulos;
+  @include m-bottomTop("25px", "5px");
 }
 .titulo-service {
   text-align: center;
@@ -12,11 +12,8 @@
   margin:auto;
 }
 .titulo1 {
-  color: darkblue;
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 25px;
-  margin-top: -20px;
+  @extend %titulos;
+  @include m-bottomTop("25px", "-20px");
 }
 
 .titulo2 {
@@ -26,10 +23,8 @@
   margin-bottom: 60px;
 }
 .titulo3 {
-  text-align: center; /* display: inline; */
   object-position: center;
-  color: darkblue;
-  font-size: 30px;
+  @extend %titulos;
   margin: 0 180px 0;
   padding: 0 20px 0;
   background-color: rgba(30, 128, 185, 0.363);

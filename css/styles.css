@@ -4,6 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 /* Asignamos margenes 0 para pegar todo a los bordes */
@@ -32,33 +34,35 @@ header .textos-header {
   padding-top: 140px;
   /* bajo texto principal de la pagina */
 }
-header .textos-header .h1 {
+header .textos-header .T1 {
   font-size: 70px;
   /* asignamos variable tamaño */
   color: darkblue;
   /* asignamos variable color */
 }
-header .textos-header .h2 {
+header .textos-header .T2 {
   font-size: 30px;
   font-weight: 30px;
   color: darkblue;
 }
-header .textos-header .h4 {
+header .textos-header .T4 {
   font-size: 20px;
   font-weight: 20px;
   color: darkblue;
 }
 
-nav {
-  width: 100%;
-  margin-bottom: 0;
-  position: fixed;
-  z-index: 20;
-  margin: 0 auto;
+.hamburguesa {
+  /*width: 100%;*/
+  margin: 60px;
+  /*padding:60px; */
+  position: relative;
+  z-index: 100;
+  /*margin: 0 auto;*/
+  /*background-color: rgba(41, 53, 214, 0.999);*/
+  /*height: 40px;*/
   background-color: rgba(41, 53, 214, 0.999);
-  height: 36px;
 }
-nav ul a {
+.hamburguesa ul a {
   color: skyblue;
   font-size: 22px;
   font-weight: 300;
@@ -70,11 +74,24 @@ nav ul a {
   border-radius: 5px 5px 5px 5px;
   /*bordes redondeados */
 }
-nav ul li a:hover {
+.hamburguesa ul li a:hover {
   text-decoration: underline;
   /*para que se marque cuando pasamos el mouse */
   cursor: pointer;
   background-color: #1e81b9;
+}
+
+.colorMenu {
+  color: #f7fad9 !important;
+  font-weight: bold !important;
+  font-size: 20px !important;
+  border-radius: 20%;
+}
+
+/*  color y tamaño al menu burger */
+.colorBurger {
+  color: #ffffff;
+  font-size: 1.5rem;
 }
 
 /* asignamos fondos */
@@ -85,12 +102,15 @@ nav ul li a:hover {
 }
 
 /* asignamos propiedades de titulos varios */
-.titulo {
+.titulo3, .titulo1, .titulo {
   color: darkblue;
   font-size: 30px;
   text-align: center;
-  margin-bottom: 25px;
-  margin-top: 5px;
+}
+
+.titulo {
+  margin-top: "5px";
+  margin-bottom: "25px";
 }
 
 .titulo-service {
@@ -100,11 +120,8 @@ nav ul li a:hover {
 }
 
 .titulo1 {
-  color: darkblue;
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 25px;
-  margin-top: -20px;
+  margin-top: "-20px";
+  margin-bottom: "25px";
 }
 
 .titulo2 {
@@ -115,11 +132,7 @@ nav ul li a:hover {
 }
 
 .titulo3 {
-  text-align: center;
-  /* display: inline; */
   object-position: center;
-  color: darkblue;
-  font-size: 30px;
   margin: 0 180px 0;
   padding: 0 20px 0;
   background-color: rgba(30, 128, 185, 0.363);
@@ -176,6 +189,11 @@ footer {
   grid-area: foto5;
 }
 
+* {
+  font-family: "oswald", poppins;
+  /*z-index: 100;*/
+}
+
 /* Asignamos fuente principal para Titulos */
 /* Asignamos propiedades a la clase contenedor */
 .contenedor {
@@ -188,11 +206,11 @@ footer {
 
 /* Asignamos propiedades a la clase titulo */
 .Logo {
-  text-align: left;
-  padding: 20px 5px 0;
+  display: flex;
+  margin: 2px 0 0 0;
   width: 5%;
-  position: fixed;
   z-index: 100;
+  position: fixed;
 }
 
 .wave {
@@ -359,24 +377,35 @@ footer {
 }
 
 /* aplicamos estilo a menu nav 320 px */
-nav i.fas {
-  display: none;
-}
-nav ul {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-}
-nav ul li {
-  text-decoration: none;
-  display: inline;
-}
+/*nav {
+  .navbar {
+    display: none;
+  }
 
+  ul {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+    li {
+      text-decoration: none;
+      display: inline;
+    }
+  }
+}*/
 #buscador2 {
   /* se coloca id directo sin "input" */
   display: none;
 }
 
+@media screen and (max-width: 810px) {
+  .Logo {
+    display: flex;
+    margin: 2px 0 0 5px;
+    width: 5%;
+    position: right;
+  }
+}
 /* ------------------media queries 320px ------------------ */
 @media screen and (max-width: 320px) {
   header {
@@ -402,17 +431,17 @@ nav ul li {
     height: 320px;
   }
 
-  .textos-header h1 {
-    font-size: 25px;
+  .textos-header .T1 {
+    font-size: 15px;
     color: darkblue;
   }
-  .textos-header h2 {
-    font-size: 15px;
+  .textos-header .T2 {
+    font-size: 10px;
     font-weight: 300;
     color: darkblue;
   }
-  .textos-header h4 {
-    font-size: 15px;
+  .textos-header .T4 {
+    font-size: 10px;
     font-weight: 300;
     color: darkblue;
   }
@@ -443,7 +472,7 @@ nav ul li {
     /* display: inline; */
     object-position: center;
     color: darkblue;
-    font-size: 15px;
+    font-size: 12px;
     margin: 0 2px 0;
     padding: 0;
     background-color: rgba(30, 128, 185, 0.363);
@@ -478,29 +507,54 @@ nav ul li {
     grid-area: imagen;
   }
 
-  /* nav de vista 320px */
-  /* es solamente un icono de vista no funciona y 
-  no tiene nav */
-  nav {
-    width: auto;
-    margin: 0 0 0 82%;
-    padding: 10px;
-    grid-area: nav;
-  }
-  nav i.fas {
-    display: block;
-    font-size: 30px;
-  }
-  nav ul {
-    display: none;
-  }
-
   .Logo {
-    text-align: left;
-    padding: 0 2px 0;
-    width: 18%;
+    display: flex;
+    margin: 2px 0 0 5px;
+    width: 15%;
     position: fixed;
     z-index: 100;
+  }
+
+  /* nav de vista 320px */
+  .menunav {
+    /*background-color: rgba(41, 53, 214, 0.999);*/
+    box-shadow: 0px 1px 1px rgba(18, 25, 131, 0.999);
+    Padding: rigth;
+    margin: 300px 0px 20px 0;
+    position: fixed;
+    z-index: 150;
+  }
+
+  .hamburguesa {
+    /*width: 100%;*/
+    margin: 5px;
+    /*position:relative;*/
+    z-index: 100;
+    /*margin: auto;*/
+    /*background-color: rgba(41, 53, 214, 0.999);*/
+    /*height: 10px;*/
+  }
+  .hamburguesa ul a {
+    color: skyblue;
+    font-size: 15px;
+    font-weight: 150;
+    /*ancho de la fuente */
+    /*text-decoration: none; */
+    /* sacamos la decoración 
+    margin-right: 15px; /* separador entre menus 
+    /* background-color: rgba(41, 151, 214, 0.5); /* color de fondo */
+    border-radius: 10px 5px 5px 5px;
+    /*bordes redondeados */
+  }
+  .hamburguesa ul li a:hover {
+    text-decoration: underline;
+    /*para que se marque cuando pasamos el mouse */
+    cursor: pointer;
+    background-color: #1e81b9;
+  }
+
+  .conteinernav {
+    position: fixed;
   }
 
   #buscador {
