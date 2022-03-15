@@ -36,7 +36,7 @@
 
 .Logo {
   display: flex;
-  margin: 2px 0 0 0;
+  margin:  auto 900px;
   width: 5%;
   z-index: 100;
   position: fixed;
@@ -233,15 +233,18 @@ footer {
   /* se coloca id directo sin "input" */
   display: none;
 }
-
-@media screen and (max-width: 810px) {
+@media screen and (max-width : 512px) {
   .Logo {
     display: flex;
-    margin: 2px 0 0 5px;
-    width: 5%;
-    position: right;
-    
-    
+    margin:  auto 230px;
+    width: 8%;
+  }
+}
+@media screen and (max-width : 412px) {
+  .Logo {
+    display: flex;
+    margin:  auto 178px;
+    width: 8%;
   }
 }
 
@@ -349,10 +352,10 @@ footer {
   }
   .Logo {
     display: flex;
-    margin: 2px 0 0 5px;
-    width: 15%;
-    position: fixed;
+    margin:  auto 134px;
+    width: 14%;
     z-index: 100;
+    position: fixed;
   }
 
 
