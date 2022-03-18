@@ -23,10 +23,10 @@ header {
    .textos-header {
         align-items: center;
         text-align: center;
-        justify-content: center;
-        position: center;
+        justify-content:space-around;
+        /*position: auto;*/
         text-decoration: underline;
-        padding-top: 140px; /* bajo texto principal de la pagina */
+        padding-top: 120px; /* bajo texto principal de la pagina */
         
         
 
@@ -36,13 +36,13 @@ header {
         }    
         .T2 {
             font-size: $textosh2;   
-            font-weight: $textosh2;
+            font-weight: $anchoh2;
             color: $textoazul;  
         }
     
         .T4 {
             font-size: $textosh4;   
-            font-weight: $textosh4; 
+            font-weight: $anchoh4; 
             color: $textoazul; 
         }
     }

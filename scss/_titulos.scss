@@ -4,7 +4,7 @@
 
 .titulo {
   @extend %titulos;
-  @include m-bottomTop("25px", "5px");
+  @include m-bottomTop("25px", "20px");  /*llamo al mixin */
 }
 .titulo-service {
   text-align: center;
@@ -13,7 +13,7 @@
 }
 .titulo1 {
   @extend %titulos;
-  @include m-bottomTop("25px", "-20px");
+  @include m-bottomTop("25px", "20px");
 }
 
 .titulo2 {

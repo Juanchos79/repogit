@@ -6,6 +6,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
+  width: auto;
 }
 
 /* Asignamos margenes 0 para pegar todo a los bordes */
@@ -28,10 +29,10 @@ header {
 header .textos-header {
   align-items: center;
   text-align: center;
-  justify-content: center;
-  position: center;
+  justify-content: space-around;
+  /*position: auto;*/
   text-decoration: underline;
-  padding-top: 140px;
+  padding-top: 120px;
   /* bajo texto principal de la pagina */
 }
 header .textos-header .T1 {
@@ -42,12 +43,12 @@ header .textos-header .T1 {
 }
 header .textos-header .T2 {
   font-size: 30px;
-  font-weight: 30px;
+  font-weight: 300;
   color: darkblue;
 }
 header .textos-header .T4 {
   font-size: 20px;
-  font-weight: 20px;
+  font-weight: 300;
   color: darkblue;
 }
 
@@ -109,8 +110,9 @@ header .textos-header .T4 {
 }
 
 .titulo {
-  margin-top: "5px";
+  margin-top: "20px";
   margin-bottom: "25px";
+  /*llamo al mixin */
 }
 
 .titulo-service {
@@ -120,7 +122,7 @@ header .textos-header .T4 {
 }
 
 .titulo1 {
-  margin-top: "-20px";
+  margin-top: "20px";
   margin-bottom: "25px";
 }
 
@@ -207,19 +209,19 @@ footer {
 /* Asignamos propiedades a la clase titulo */
 .Logo {
   display: flex;
-  margin: auto 900px;
+  margin-top: auto;
+  margin-left: auto;
   width: 5%;
   z-index: 100;
   position: fixed;
 }
 
-.wave {
+/*.wave {
   position: absolute;
   bottom: 0;
   width: 100%;
   border-top-color: blueviolet, border("2");
-}
-
+} */
 #texto-servicio .fuente-texto {
   color: #fff;
   font-size: 30px;
@@ -228,12 +230,6 @@ footer {
   background-color: rgba(40, 127, 184, 0.486);
   margin: 0 10em;
   width: 190px;
-}
-
-.Contenedor-principal {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
 }
 
 .Marcas {
@@ -377,32 +373,128 @@ footer {
 }
 
 /* aplicamos estilo a menu nav 320 px */
-/*nav {
-  .navbar {
-    display: none;
-  }
+nav2 .navbar {
+  display: none;
+}
+nav2 ul {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+nav2 ul li {
+  text-decoration: none;
+  display: inline;
+}
 
-  ul {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-
-    li {
-      text-decoration: none;
-      display: inline;
-    }
-  }
-}*/
 #buscador2 {
   /* se coloca id directo sin "input" */
   display: none;
 }
 
+@media screen and (max-width: 1920px) {
+  .navbar-expand-lg {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .Logo {
+    display: flex;
+    margin-top: 8px;
+    margin-left: auto;
+    padding-right: auto;
+    width: 10%;
+  }
+
+  nav2 {
+    display: inline;
+  }
+
+  /*.navbar-expand-lg {
+    display:list-item;
+    position: fixed;
+    z-index: 200;
+  }*/
+  /*#buscador2{
+    display: inline;
+    margin-top: 45px;
+    margin-left: 10px;
+  }*/
+}
+@media screen and (max-width: 810px) {
+  .Logo {
+    display: flex;
+    margin: 8px 352px;
+    padding-right: auto;
+    width: 10%;
+  }
+
+  nav2 {
+    display: none;
+  }
+
+  .navbar-expand-lg {
+    display: list-item;
+    position: fixed;
+    z-index: 200;
+  }
+
+  #buscador2 {
+    display: inline;
+    margin-top: 45px;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Logo {
+    display: flex;
+    margin: 5px 340px;
+    padding-right: auto;
+    width: 10%;
+  }
+
+  .menunav {
+    /*background-color: rgba(41, 53, 214, 0.999); */
+    box-shadow: 0px 1px 1px rgba(93, 100, 199, 0.479);
+    Padding: rigth;
+    margin: 300px 0px 39px 0;
+    position: fixed;
+    z-index: 200;
+  }
+
+  .hamburguesa {
+    margin: 32px;
+    z-index: 200;
+    background-color: rgba(144, 150, 238, 0.425);
+    width: 70%;
+  }
+  .hamburguesa ul a {
+    color: skyblue;
+    font-size: 15px;
+    font-weight: 150;
+    /*ancho de la fuente */
+    border-radius: 10px 5px 5px 5px;
+    /*bordes redondeados */
+  }
+  .hamburguesa ul li a:hover {
+    text-decoration: underline;
+    /*para que se marque cuando pasamos el mouse */
+    cursor: pointer;
+    background-color: #1e81b9;
+  }
+
+  nav2 {
+    display: none;
+  }
+}
 @media screen and (max-width: 512px) {
   .Logo {
     display: flex;
     margin: auto 230px;
     width: 8%;
+  }
+
+  nav2 {
+    display: none;
   }
 }
 @media screen and (max-width: 412px) {
@@ -410,6 +502,10 @@ footer {
     display: flex;
     margin: auto 178px;
     width: 8%;
+  }
+
+  nav2 {
+    display: none;
   }
 }
 /* ------------------media queries 320px ------------------ */
@@ -437,19 +533,32 @@ footer {
     height: 320px;
   }
 
+  /* compilo las variables en textos T1 T2 y T3 */
+  .textos-header {
+    padding-top: 10px !important;
+  }
   .textos-header .T1 {
-    font-size: 15px;
+    font-size: 25px !important;
     color: darkblue;
   }
   .textos-header .T2 {
-    font-size: 10px;
+    font-size: 15px !important;
     font-weight: 300;
     color: darkblue;
   }
   .textos-header .T4 {
-    font-size: 10px;
+    font-size: 15px !important;
     font-weight: 300;
     color: darkblue;
+  }
+
+  .titulo1 {
+    margin-top: 100px;
+    /* acomodo titulos Nuestras ofertas */
+  }
+
+  .titulo {
+    margin-bottom: -60px;
   }
 
   .contenedor-principal,
@@ -515,30 +624,31 @@ footer {
 
   .Logo {
     display: flex;
-    margin: auto 134px;
+    margin: 5px 134px;
     width: 14%;
     z-index: 100;
     position: fixed;
   }
 
   /* nav de vista 320px */
+  nav2 {
+    display: none;
+  }
+
   .menunav {
-    /*background-color: rgba(41, 53, 214, 0.999);*/
-    box-shadow: 0px 1px 1px rgba(18, 25, 131, 0.999);
+    /*background-color: rgba(41, 53, 214, 0.999); */
+    box-shadow: 0px 1px 1px rgba(93, 100, 199, 0.479);
     Padding: rigth;
-    margin: 300px 0px 20px 0;
+    margin: 300px 0px 39px 0;
     position: fixed;
-    z-index: 150;
+    z-index: 200;
   }
 
   .hamburguesa {
-    /*width: 100%;*/
-    margin: 5px;
-    /*position:relative;*/
-    z-index: 100;
-    /*margin: auto;*/
-    /*background-color: rgba(41, 53, 214, 0.999);*/
-    /*height: 10px;*/
+    margin: 32px;
+    z-index: 200;
+    background-color: rgba(144, 150, 238, 0.425);
+    width: 70%;
   }
   .hamburguesa ul a {
     color: skyblue;
@@ -559,10 +669,9 @@ footer {
     background-color: #1e81b9;
   }
 
-  .conteinernav {
+  /*.conteinernav {
     position: fixed;
-  }
-
+  }*/
   #buscador {
     align-items: center;
     z-index: 20;
