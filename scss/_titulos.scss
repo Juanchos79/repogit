@@ -1,0 +1,38 @@
+/* asignamos propiedades de titulos varios */
+@import "_extend";
+@import "_mixin";
+
+.titulo {
+  @extend %titulos;
+  @include m-bottomTop("25px", "20px");  /*llamo al mixin */
+}
+.titulo-service {
+  text-align: center;
+  justify-content: center;
+  margin:auto;
+}
+.titulo1 {
+  @extend %titulos;
+  @include m-bottomTop("25px", "20px");
+}
+
+.titulo2 {
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.titulo3 {
+  object-position: center;
+  @extend %titulos;
+  margin: 0 180px 0;
+  padding: 0 20px 0;
+  background-color: rgba(30, 128, 185, 0.363);
+}
+
+.titulo-contacto {
+  color: aliceblue;
+  text-underline-position: auto;
+  text-shadow: #1e81b9;
+}
+

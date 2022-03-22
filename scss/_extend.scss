@@ -1,0 +1,7 @@
+@import "_map";
+
+%titulos {
+    color: map-get($mapaColores, titulo);
+    font-size: 30px;
+    text-align: center;
+}

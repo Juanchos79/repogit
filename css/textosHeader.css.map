@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/textosHeader.scss"
+    ],
+    "names": [],
+    "file": "textosHeader.css"
+}
