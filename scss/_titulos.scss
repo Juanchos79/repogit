@@ -4,23 +4,21 @@
 
 .titulo {
   @extend %titulos;
-  @include m-bottomTop("25px", "20px");  /*llamo al mixin */
+  @include m-bottomTop("25px", "20px"); /*llamo al mixin */
 }
 #fondogral {
   .parrafo {
-    .container-fluid{
-      .titulo-service {
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-        color:rgba(30, 40, 185, 0.884);
-        background-color: rgb(127, 178, 255);
-        z-index: 150;
-        /*text-align: center;*/
-        /*margin:auto; */
-      }
+    .titulo-service {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      color: rgba(30, 40, 185, 0.884);
+      background-color: rgb(127, 178, 255);
+      z-index: 150;
+      /*text-align: center;*/
+      /*margin:auto; */
     }
-  }      
+  }
 }
 .titulo1 {
   @extend %titulos;
@@ -46,4 +44,3 @@
   text-underline-position: auto;
   text-shadow: #1e81b9;
 }
-
