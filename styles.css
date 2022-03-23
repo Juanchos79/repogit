@@ -20,13 +20,7 @@ header {
   height: 470px;
   background: #2980b9;
   /* fallback for old browsers */
-  background: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0.63),
-      rgba(107, 212, 250, 0.788),
-      rgba(40, 127, 184, 0.322)
-    ),
-    url(../images/Cofee1920.jpg);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.63), rgba(107, 212, 250, 0.788), rgba(40, 127, 184, 0.322)), url(../images/Cofee1920.jpg);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-attachment: fixed;
@@ -92,7 +86,7 @@ header .textos-header .T4 {
   color: #f7fad9 !important;
   font-weight: bold !important;
   font-size: 20px !important;
-  border-radius: 20%;
+  border-radius: 20% !important;
 }
 
 /*  color y tamaño al menu burger */
@@ -109,9 +103,7 @@ header .textos-header .T4 {
 }
 
 /* asignamos propiedades de titulos varios */
-.titulo3,
-.titulo1,
-.titulo {
+.titulo3, .titulo1, .titulo {
   color: darkblue;
   font-size: 30px;
   text-align: center;
@@ -123,11 +115,16 @@ header .textos-header .T4 {
   /*llamo al mixin */
 }
 
-/*.titulo-service {
+#fondogral .parrafo .container-fluid .titulo-service {
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
-  justify-content: center;
-  margin: auto;  
-}*/
+  color: rgba(30, 40, 185, 0.884);
+  background-color: #7fb2ff;
+  z-index: 150;
+  /*text-align: center;*/
+  /*margin:auto; */
+}
 
 .titulo1 {
   margin-top: "20px";
@@ -230,7 +227,41 @@ footer {
   width: 100%;
   border-top-color: blueviolet, border("2");
 } */
-
+/*#fondogral {
+  .parrafo {
+    .container-fluid{
+      .titulo-service {
+        object-position: center;
+        color: blue;
+        margin: 0 180px 0;
+        padding: 0 20px 0;
+        background-color: rgba(30, 128, 185, 0.363);
+      }
+    }
+  }
+} */
+/*.serviciotext {
+  color: #fff;
+  font-size: 40px;
+  display: flex;
+  margin: 0 10em;
+  width: 100px;
+} */
+/*#fondogral .parrafo {
+  color: #fff !important;
+  font-size: 25px;
+  display: block;
+  border-style: outset;
+  border-color: rgb(75, 6, 132);
+  background-color: rgb(40, 126, 184);
+  margin: 0 10em;
+  width: auto;
+  /*justify-content: center;
+} */
+/*.parrafo img {
+  display: flex;
+  align-items: center;
+} */
 .Marcas {
   font-size: 25px;
   font-weight: 300;
@@ -390,9 +421,19 @@ nav2 ul li {
   display: none;
 }
 
+/*@media screen and (max-width: 2000px) {
+  .navbar-expand-lg .navbar-nav .hamburguesa {
+    display: none !important;
+  }
+}*/
+@media only screen and (max-width: 3840px) and (min-width: 1921px) {
+  .navbar-nav {
+    display: none !important;
+  }
+}
 @media screen and (max-width: 1920px) {
-  .navbar-expand-lg {
-    display: none;
+  .navbar .navbar-expand-lg .navbar-light .fondoNav .navbar-nav {
+    display: none !important;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -512,13 +553,7 @@ nav2 ul li {
   header {
     background: #2980b9;
     /* fallback for old browsers */
-    background: linear-gradient(
-        to right,
-        rgba(255, 255, 255, 0.63),
-        rgba(107, 212, 250, 0.788),
-        rgba(40, 127, 184, 0.322)
-      ),
-      url(../images/Cofee1920_1.jpg);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.63), rgba(107, 212, 250, 0.788), rgba(40, 127, 184, 0.322)), url(../images/Cofee1920_1.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 200px;
     background-size: cover;
@@ -567,9 +602,9 @@ nav2 ul li {
   }
 
   .contenedor-principal,
-  .Marcas,
-  .titulo3,
-  .contenedor-intro {
+.Marcas,
+.titulo3,
+.contenedor-intro {
     display: flex;
     flex-direction: column;
     vertical-align: center;
