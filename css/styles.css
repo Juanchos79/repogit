@@ -20,13 +20,7 @@ header {
   height: 470px;
   background: #2980b9;
   /* fallback for old browsers */
-  background: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0.63),
-      rgba(107, 212, 250, 0.788),
-      rgba(40, 127, 184, 0.322)
-    ),
-    url(../images/Cofee1920.jpg);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.63), rgba(107, 212, 250, 0.788), rgba(40, 127, 184, 0.322)), url(../images/Cofee1920.jpg);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-attachment: fixed;
@@ -62,37 +56,39 @@ header .textos-header .T4 {
   /*width: 100%;*/
   margin: 60px;
   /*padding:60px; */
-  position: relative;
-  z-index: 100;
+  /*position: relative;*/
+  /*z-index: 100;*/
   /*margin: 0 auto;*/
   /*background-color: rgba(41, 53, 214, 0.999);*/
   /*height: 40px;*/
   background-color: rgba(41, 53, 214, 0.999);
-}
-.hamburguesa ul a {
-  color: skyblue;
-  font-size: 22px;
-  font-weight: 300;
-  /*ancho de la fuente */
-  text-decoration: none;
-  /* sacamos la decoración 
-  margin-right: 15px; /* separador entre menus 
-  /* background-color: rgba(41, 151, 214, 0.5); /* color de fondo */
-  border-radius: 5px 5px 5px 5px;
-  /*bordes redondeados */
-}
-.hamburguesa ul li a:hover {
-  text-decoration: underline;
-  /*para que se marque cuando pasamos el mouse */
-  cursor: pointer;
-  background-color: #1e81b9;
+  /*ul { 
+      a {
+      color: skyblue;
+      font-size: 22px;
+      font-weight: 300;   /*ancho de la fuente 
+      text-decoration: none; /* sacamos la decoración 
+      margin-right: 15px; /* separador entre menus 
+      /* background-color: rgba(41, 151, 214, 0.5); /* color de fondo 
+      border-radius: 5px 5px 5px 5px;  /*bordes redondeados 
+      }*/
+  /*li {
+          a {
+              &:hover{
+                  text-decoration: underline;  /*para que se marque cuando pasamos el mouse 
+                  cursor: pointer;
+                  background-color: #1e81b9;
+              }
+          }       
+      }           
+  }*/
 }
 
 .colorMenu {
   color: #f7fad9 !important;
   font-weight: bold !important;
   font-size: 20px !important;
-  border-radius: 20%;
+  border-radius: 20% !important;
 }
 
 /*  color y tamaño al menu burger */
@@ -109,9 +105,7 @@ header .textos-header .T4 {
 }
 
 /* asignamos propiedades de titulos varios */
-.titulo3,
-.titulo1,
-.titulo {
+.titulo3, .titulo1, .titulo {
   color: darkblue;
   font-size: 30px;
   text-align: center;
@@ -123,11 +117,16 @@ header .textos-header .T4 {
   /*llamo al mixin */
 }
 
-/*.titulo-service {
+#fondogral .parrafo .titulo-service {
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
-  justify-content: center;
-  margin: auto;  
-}*/
+  color: rgba(30, 40, 185, 0.884);
+  background-color: #7fb2ff;
+  z-index: 150;
+  /*text-align: center;*/
+  /*margin:auto; */
+}
 
 .titulo1 {
   margin-top: "20px";
@@ -224,12 +223,54 @@ footer {
   position: fixed;
 }
 
+.fondoNav {
+  display: none !important;
+  color: red !important;
+}
+
 /*.wave {
   position: absolute;
   bottom: 0;
   width: 100%;
   border-top-color: blueviolet, border("2");
 } */
+/*#fondogral {
+  .parrafo {
+    .container-fluid{
+      .titulo-service {
+        object-position: center;
+        color: blue;
+        margin: 0 180px 0;
+        padding: 0 20px 0;
+        background-color: rgba(30, 128, 185, 0.363);
+      }
+    }
+  }
+} */
+.serviciotext {
+  color: #fff;
+  font-size: 40px;
+  display: flex;
+  margin: 0 10em;
+  width: 100px;
+}
+
+#fondogral .parrafo .titulo-service {
+  color: #fff !important;
+  font-size: 25px !important;
+  display: block !important;
+  border-style: outset !important;
+  border-color: #4b0684 !important;
+  background-color: #287eb8 !important;
+  /*margin: 0 10em !important;*/
+  width: auto !important;
+  justify-content: center !important;
+}
+
+.parrafo img {
+  display: flex;
+  align-items: center;
+}
 
 .Marcas {
   font-size: 25px;
@@ -390,9 +431,9 @@ nav2 ul li {
   display: none;
 }
 
-@media screen and (max-width: 1920px) {
-  .navbar-expand-lg {
-    display: none;
+@media only screen and (max-width: 3840px) and (min-width: 1921px) {
+  .navbar .navbar-expand-lg .navbar-light .fondoNav .navbar-nav {
+    display: none !important;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -407,17 +448,6 @@ nav2 ul li {
   nav2 {
     display: inline;
   }
-
-  /*.navbar-expand-lg {
-    display:list-item;
-    position: fixed;
-    z-index: 200;
-  }*/
-  /*#buscador2{
-    display: inline;
-    margin-top: 45px;
-    margin-left: 10px;
-  }*/
 }
 @media screen and (max-width: 810px) {
   .Logo {
@@ -512,13 +542,7 @@ nav2 ul li {
   header {
     background: #2980b9;
     /* fallback for old browsers */
-    background: linear-gradient(
-        to right,
-        rgba(255, 255, 255, 0.63),
-        rgba(107, 212, 250, 0.788),
-        rgba(40, 127, 184, 0.322)
-      ),
-      url(../images/Cofee1920_1.jpg);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.63), rgba(107, 212, 250, 0.788), rgba(40, 127, 184, 0.322)), url(../images/Cofee1920_1.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 200px;
     background-size: cover;
@@ -567,9 +591,9 @@ nav2 ul li {
   }
 
   .contenedor-principal,
-  .Marcas,
-  .titulo3,
-  .contenedor-intro {
+.Marcas,
+.titulo3,
+.contenedor-intro {
     display: flex;
     flex-direction: column;
     vertical-align: center;

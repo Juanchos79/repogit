@@ -44,6 +44,10 @@
   position: fixed;
 }
 
+.fondoNav{
+  display: none !important;
+  color: red !important;
+}
 /*.wave {
   position: absolute;
   bottom: 0;
@@ -65,13 +69,13 @@
   }
 } */
 
-/*.serviciotext {
+.serviciotext {
   color: #fff;
   font-size: 40px;
   display: flex;
   margin: 0 10em;
   width: 100px;
-} */
+}
 
 #fondogral {
   .parrafo {
@@ -82,17 +86,17 @@
       border-style: outset !important;
       border-color: rgb(75, 6, 132) !important;
       background-color: rgb(40, 126, 184) !important;
-      margin: 0 10em !important;
+      /*margin: 0 10em !important;*/
       width: auto !important;
       justify-content: center !important;
     }
   }
 }
 
-/*.parrafo img {
+.parrafo img {
   display: flex;
   align-items: center;
-} */
+}
 
 .Marcas {
   font-size: 25px;
@@ -262,14 +266,13 @@ nav2 {
 }
 
 @media only screen and (max-width: 3840px) and (min-width: 1921px) {
-  .navbar-nav {
-    display: none !important;
-  }
-}
-@media screen and (max-width: 1920px) {
   .navbar .navbar-expand-lg .navbar-light .fondoNav .navbar-nav {
     display: none !important;
   }
+}
+
+@media screen and (max-width: 1920px) {
+  
 }
 @media screen and (max-width: 1200px) {
   .Logo {
