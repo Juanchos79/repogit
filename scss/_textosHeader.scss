@@ -85,13 +85,20 @@ header {
 } 
 
 .colorMenu {
-    color: #f7fad9 !important;
+    color: #6062da !important;
     font-weight: bold !important;
     font-size: 20px !important;
     border-radius: 20% !important;
   }
 /*  color y tamaño al menu burger */
 .colorBurger {
-    color: #ffffff;
-    font-size: 1.5rem  
+    color: #6062da;
+    font-size: 1.5rem;
+      
+}
+.navbar-collapse {
+    display: flex;
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
 }

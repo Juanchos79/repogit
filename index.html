@@ -39,8 +39,8 @@
         <nav2>
             <ul>
                 <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/tiendaOnline.html">Tienda Online</a></li>
-                <li><a href="./pages/servicioTecnico.html">Servicio Técnico</a></li>
+                <li><a href="./pages/tiendaonline.html">Tienda Online</a></li>
+                <li><a href="./pages/serviciotecnico.html">Servicio Técnico</a></li>
                 <li><a href="./pages/nosotros.html">Nosotros</a></li>
                 <li><a href="./pages/contacto.html#formulario">Contacto</a></li>
                 <input id="buscador" type="search" placeholder="Busqueda..">
@@ -66,7 +66,7 @@
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link active colorMenu menuAnim wow animate__animated animate__flipInX"
-                                    aria-current="page" href="./index.html">Home</a>
+                                    aria-current="page" href="index.html" style="visibility: visible; animation-name: flipInX;">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link colorMenu menuAnim wow animate__animated animate__flipInX"
@@ -310,7 +310,7 @@
         AOS.init();
     </script>
     <!-- Función jQuery para cerrar el navbar automáticamente -->
-    <script>
+    <!-- <script>
         $('.navbar-nav>li>a').on('click', function () {
             $('.navbar-collapse').collapse('hide');
         });

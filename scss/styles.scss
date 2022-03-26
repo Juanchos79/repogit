@@ -45,8 +45,7 @@
 }
 
 .fondoNav{
-  display: none !important;
-  color: red !important;
+  display: none;
 }
 /*.wave {
   position: absolute;
@@ -112,8 +111,8 @@
   /*padding-bottom: 5px;
     padding-top: 5px;*/
   margin: 0 auto;
-  width: 600px;
-  height: 350px;
+  width: 900px;
+  height: 450px;
   display: flex;
   justify-items: center;
 }
@@ -269,15 +268,11 @@ nav2 {
   }
 }
 
-@media screen and (max-width: 1920px) {
-  
-}
 @media screen and (max-width: 1200px) {
   .Logo {
     display: flex;
     margin-top: 8px;
     margin-left: auto;
-
     padding-right: auto;
     width: 10%;
   }
@@ -364,13 +359,209 @@ nav2 {
 @media screen and (max-width: 412px) {
   .Logo {
     display: flex;
-    margin: auto 178px;
-    width: 8%;
+    margin: 5px 178px;
+    width: 11%;
   }
   nav2 {
     display: none;
   }
+  header {
+    background: #2980b9; // fallback for old browsers 
+    background: linear-gradient(
+        to right,
+        hsla(0, 0%, 100%, 0.63),
+        hsla(196, 93%, 70%, 0.788),
+        hsla(204, 64%, 44%, 0.322)
+      ),
+      url(../images/Cofee1920_1.jpg); // W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
+
+    height: 200px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    
+  }
+  .textos-header {
+    padding-top: 10px !important;
+    .T1 {
+      font-size: 25px !important;
+      color: $textoazul;
+    }
+
+    .T2 {
+      font-size: 15px !important;
+      font-weight: 300;
+      color: $textoazul;
+    }
+
+    .T4 {
+      font-size: 15px !important;
+      font-weight: 300;
+      color: $textoazul;
+    }
+  }
+  #fondo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../images/cuaderno1920-1.jpg);
+    background-attachment: fixed;
+    position: relative;
+    width: fit-content;
+    height: 320px;
+  }
+  .titulo1 {
+    margin-top: 300px; /* acomodo titulos Nuestras ofertas */
+  }
+  .titulo {
+    margin-bottom: -60px;
+  }
+
+  .contenedor-principal,
+  .Marcas,
+  .titulo3,
+  .contenedor-intro {
+    display: flex;
+    flex-direction: column;
+    vertical-align: center;
+    justify-items: center;
+  }
+
+  .Marcas {
+    font-size: 15px;
+    font-weight: 300;
+    color: darkblue;
+    text-align: center;
+    object-position: center;
+    padding: 10px 0;
+    background-color: hsla(202, 72%, 42%, 0.397);
+  }
+
+  /* se repite titulo 3 en media queries 320 */
+  .titulo3 {
+    text-align: center; // display: inline;
+    object-position: center;
+    color: darkblue;
+    font-size: 30px;
+    margin: 0 2px 0;
+    padding: 0;
+    background-color: rgba(30, 128, 185, 0.363);
+  }
+  .contenedor-intro {
+    width: 430px !important;
+    height: 470px;
+    
+    
+  }
+  .videoindex {
+    
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin: 0 auto;
+    display: block;
+    width: 360px !important;
+  }
+
+  .contenedor-principal {
+    height: 150px;
+  }
+  .group {
+    grid-area: group;
+  }
+  .group1 {
+    grid-area: group1;
+  }
+  .image-1 {
+    grid-area: imagen;
+  }
+  
+  .menunav {
+    background-color: hsla(236, 69%, 69%, 0.123);
+    box-shadow: 0px 1px 1px rgba(93, 100, 199, 0.479);
+    padding: rigth;
+    margin: 300px 0px 39px 0;
+    /*position: fixed;*/
+    z-index: 200;
+  }
+  .hamburguesa {
+    margin: 32px;
+    z-index: 200;
+    background-color: rgba(144, 150, 238, 0.425);
+    width: 70%;
+
+    ul {
+      a {
+        color: skyblue;
+        font-size: 15px;
+        font-weight: 150; /*ancho de la fuente */
+        /*text-decoration: none; */ /* sacamos la decoración 
+        margin-right: 15px; /* separador entre menus 
+        /* background-color: rgba(41, 151, 214, 0.5); /* color de fondo */
+        border-radius: 10px 5px 5px 5px; /*bordes redondeados */
+      }
+
+      li {
+        a {
+          &:hover {
+            text-decoration: underline; /*para que se marque cuando pasamos el mouse */
+            cursor: pointer;
+            background-color: #1e81b9;
+          }
+        }
+      }
+    }
+  }
+
+  /*.conteinernav {
+    position: fixed;
+  }*/
+
+  #buscador {
+    align-items: center;
+    z-index: 20;
+  }
+
+  .galeria {
+    grid-area: galeria;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 10%;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-areas:
+      "group"
+      "group1";
+  }
+
+  .group {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 8% 25% 8% 25% 8%;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    grid-template-areas:
+      "foto0"
+      "foto1"
+      "foto2";
+  }
+  .group1 {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40% 33% 33%;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    grid-template-areas:
+      "foto3"
+      "foto4"
+      "foto5";
+  }
 }
+
+
 
 /* ------------------media queries 320px ------------------ */
 
@@ -386,6 +577,7 @@ nav2 {
       url(../images/Cofee1920_1.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     height: 200px;
+    width:auto;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -406,7 +598,7 @@ nav2 {
   .textos-header {
     padding-top: 10px !important;
     .T1 {
-      font-size: 25px !important;
+      font-size: 28px !important;
       color: $textoazul;
     }
 
@@ -424,7 +616,7 @@ nav2 {
   }
 
   .titulo1 {
-    margin-top: 100px; /* acomodo titulos Nuestras ofertas */
+    margin-top: 5px; /* acomodo titulos Nuestras ofertas */
   }
   .titulo {
     margin-bottom: -60px;
@@ -455,25 +647,31 @@ nav2 {
     text-align: center; /* display: inline; */
     object-position: center;
     color: darkblue;
-    font-size: 12px;
+    font-size: 25px;
     margin: 0 2px 0;
     padding: 0;
     background-color: rgba(30, 128, 185, 0.363);
   }
-  .contenedor-intro {
-    width: 320px;
-    height: 190px;
+  .contenedor-intro {  
+    //margin: 1px !important;
+    width: 256px;
+    height: 210px;
+
   }
   .videoindex {
     padding-bottom: 5px;
     padding-top: 5px;
-    margin: 0 20px 0;
-    width: 200px !important;
-    height: 150px;
+    margin: 10px !important;
+    display: block;
+    width: 300px !important;
   }
 
   .contenedor-principal {
-    height: 150px;
+    height: 300px;
+  }
+  .contenedor {
+    padding: 10px;
+    margin: 10px;  
   }
   .group {
     grid-area: group;
