@@ -242,8 +242,6 @@ footer {
   padding: 0;
 }
 
-/* aplicamos estilo a menu nav 320 px */
-
 nav2 {
   .navbar {
     display: none;
@@ -267,7 +265,7 @@ nav2 {
 
 @media only screen and (max-width: 3840px) and (min-width: 1921px) {
   .navbar .navbar-expand-lg .navbar-light .fondoNav .navbar-nav {
-    display: none !important;
+    display: inline;
   }
 }
 
@@ -316,7 +314,7 @@ nav2 {
     padding-right: auto;
     width: 10%;
   }
-  .menunav {
+  .menunav {                                 //  estilo de barra menu
     /*background-color: rgba(41, 53, 214, 0.999); */
     box-shadow: 0px 1px 1px rgba(93, 100, 199, 0.479);
     padding: rigth;
@@ -350,7 +348,7 @@ nav2 {
     }
   }
   nav2 {
-    display: none;
+    display: none;  // para 768px
   }
 }
 @media screen and (max-width: 512px) {
@@ -494,8 +492,8 @@ nav2 {
     position: fixed;
   }
 
-  /* nav de vista 320px */
-  nav2 {
+  
+  nav2 {            // nav de vista 320px 
     display: none;
   }
 

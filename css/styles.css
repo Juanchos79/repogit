@@ -412,7 +412,6 @@ footer {
   padding: 0;
 }
 
-/* aplicamos estilo a menu nav 320 px */
 nav2 .navbar {
   display: none;
 }
@@ -433,7 +432,7 @@ nav2 ul li {
 
 @media only screen and (max-width: 3840px) and (min-width: 1921px) {
   .navbar .navbar-expand-lg .navbar-light .fondoNav .navbar-nav {
-    display: none !important;
+    display: inline;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -659,7 +658,6 @@ nav2 ul li {
     position: fixed;
   }
 
-  /* nav de vista 320px */
   nav2 {
     display: none;
   }
