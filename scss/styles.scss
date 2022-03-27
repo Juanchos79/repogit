@@ -45,17 +45,17 @@
 }
 .longitud {
   width: 100%;
-  //height: 70px;
 }
 .fondoNav {
   display: none;
 }
-/*.wave {
+.wave {
   position: absolute;
+  margin-bottom: 1px;
   bottom: 0;
   width: 100%;
   border-top-color: blueviolet, border("2");
-} */
+}
 
 /*#fondogral {
   .parrafo {
@@ -244,47 +244,34 @@ footer {
   padding: 0;
 }
 
-/*nav2 {
-  .navbar {
-    display: none;
-  }
-
-  ul {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-
-    li {
-      text-decoration: none;
-      display: inline;
-    }
-  }
-}*/
-#buscador2 {
+/*#buscador2 {
   display: inline;
-  margin-top: 220px;
-  margin-left: 10px;
-}
+  margin-top: 40px;
+  position: center;
+  //margin-left: 10px;
+  z-index: 300;
+}*/
 
 @media only screen and (max-width: 3840px) and (min-width: 1921px) {
-  //.navbar .navbar-expand-lg .navbar-light .fondoNav .navbar-nav {
-    //display: inline;
-  //}
+  /*#buscador2 {
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+    align-items: center;
+  }*/
 }
 
 @media screen and (max-width: 1200px) {
   .contenedor-intro {
     width: 1200px;
   }
-  /*.Logo {
-    //display: flex;
-    //margin-top: 8px;
-    //margin-left: auto;
-    //padding-right: auto;
-    width: 10%;
+  /*#buscador2 {
+    margin-top: 50px;
+    align-items: center;
   }*/
-  nav2 {
-    display: inline;
+  .longitud {
+    //position:fixed;
+    z-index: 300;
   }
 }
 
@@ -293,6 +280,7 @@ footer {
     width: 810px;
     height: 470px;
   }
+
   .Marcas {
     font-size: 22px;
     font-weight: 300;
@@ -303,7 +291,7 @@ footer {
     background-color: hsla(202, 72%, 42%, 0.397);
   }
   .titulo1 {
-    margin-top: 50px;   // acomodo titulos Nuestras ofertas 
+    margin-top: 50px; // acomodo titulos Nuestras ofertas
   }
   .titulo {
     margin-bottom: 20px;
@@ -332,12 +320,6 @@ footer {
       color: $textoazul;
     }
   }
-  /*#buscador2 {
-    
-    margin-top: 220px;
-    margin-left: 10px;
-  }*/
-
 }
 @media screen and (max-width: 768px) {
   .contenedor-intro {
@@ -354,7 +336,7 @@ footer {
     background-color: hsla(202, 72%, 42%, 0.397);
   }
   .titulo1 {
-    margin-top: 50px;   // acomodo titulos Nuestras ofertas 
+    margin-top: 50px; // acomodo titulos Nuestras ofertas
   }
   .titulo {
     margin-bottom: 20px;
@@ -378,6 +360,11 @@ footer {
       color: $textoazul;
     }
   }
+  /*#buscador2 {
+    //margin-left: 300px;
+
+
+  }*/
   /*.Logo {
     //display: flex;
     //margin: 5px 340px;
@@ -432,14 +419,6 @@ footer {
   }
 }*/
 @media screen and (max-width: 412px) {
-  /*.Logo {
-    //display: flex;
-    //margin: 5px 178px;
-    width: 42%;
-  }*/
-  /*nav2 {
-    display: none;
-  } */
   header {
     background: #2980b9; // fallback for old browsers
     background: linear-gradient(
@@ -450,27 +429,26 @@ footer {
       ),
       url(../images/Cofee1920_1.jpg); // W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
 
-    height: 200px;
+    height: 360px;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
     overflow: hidden;
   }
   .textos-header {
-    padding-top: 10px !important;
     .T1 {
       font-size: 25px !important;
       color: $textoazul;
     }
 
     .T2 {
-      font-size: 15px !important;
+      font-size: 18px !important;
       font-weight: 300;
       color: $textoazul;
     }
 
     .T4 {
-      font-size: 15px !important;
+      font-size: 18px !important;
       font-weight: 300;
       color: $textoazul;
     }
@@ -503,19 +481,19 @@ footer {
   }
 
   .Marcas {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 300;
     color: darkblue;
     text-align: center;
-    object-position: center;
+    position: relative;
     padding: 1px 0;
     background-color: hsla(202, 72%, 42%, 0.397);
   }
 
-  /* se repite titulo 3 en media queries 320 */
+  /* se repite titulo 3 en media queries 412 */
   .titulo3 {
     text-align: center; // display: inline;
-    object-position: center;
+    position: center;
     color: darkblue;
     font-size: 30px;
     margin: 0 2px 0;
@@ -588,9 +566,12 @@ footer {
     position: fixed;
   }*/
 
-  #buscador {
-    align-items: center;
-    z-index: 20;
+  /*#buscador2 {
+    margin-left: 120px;
+  }*/
+  .longitud {
+    //position: fixed;
+    z-index: 300;
   }
 
   .galeria {
@@ -645,7 +626,7 @@ footer {
       ),
       url(../images/Cofee1920_1.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-    height: 200px;
+    height: 360px;
     width: auto;
     background-size: cover;
     background-attachment: fixed;
@@ -750,17 +731,6 @@ footer {
   .image-1 {
     grid-area: imagen;
   }
-  /*.Logo {
-    //display: flex;
-    //margin: 5px 134px;
-    width: 14%;
-    //z-index: 100;
-    //position: fixed;
-  }*/
-
-  /*nav2 {            // nav de vista 320px 
-    display: none;
-  }*/
 
   /*.menunav {
     //background-color: rgba(41, 53, 214, 0.999); 
@@ -803,10 +773,9 @@ footer {
     position: fixed;
   }*/
 
-  #buscador {
-    align-items: center;
-    z-index: 20;
-  }
+  /*#buscador2 {
+    margin-left: 80px;
+  }*/
 
   .galeria {
     grid-area: galeria;

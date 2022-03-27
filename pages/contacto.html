@@ -19,89 +19,74 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="..\js\wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <link rel="stylesheet" href="../css/styles.css">
 
 </head>
 
 <body>
     <header>
-        <!-- cabecera-->
+        <!--cabecera-->
+        
+        <nav class="navbar navbar-expand-lg navbar-light longitud" style=background-color:#7981e61f;>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img class="Logo" src="../images/Logo.jpg" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon colorBurger"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active colorMenu menuAnim wow animate__animated animate__flipInX"
+                                aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active colorMenu menuAnim wow animate__animated animate__flipInX"
+                                href="./tiendaonline.html">Tienda Online</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active colorMenu menuAnim wow animate__animated animate__flipInX"
+                                href="./serviciotecnico.html">Servicio Técnico</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active colorMenu menuAnim wow animate__animated animate__flipInX"
+                                href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active colorMenu menuAnim wow animate__animated animate__flipInX"
+                                href="./contacto.html#formulario">Contacto</a>
+                        </li>
 
-        <nav2>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./tiendaonline.html">Tienda Online</a></li>
-                <li><a href="./serviciotecnico.html">Servicio Técnico</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./contacto.html#formulario">Contacto</a></li>
-                <input id="buscador" type="search" placeholder="Busqueda..">
-            </ul>
-
-        </nav2>
-        <div class="Logo">
-            <img src="../images/Logo.jpg" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000" alt=""
-                class="Logo">
-        </div>
-        <div class="">
-            <!-- Menu principal responsive -->
-            <nav class="navbar navbar-expand-lg navbar-light fondoNav">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" id="botHambur" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="colorBurger">☰</span>
-                    </button>
-
-                    <div class="collapse navbar-collapse menunav" id="navbarNav">
-                        <ul class="navbar-nav hamburguesa">
-                            <li class="nav-item">
-                                <a class="nav-link active colorMenu menuAnim wow animate__animated animate__flipInX"
-                                    aria-current="page" href="../index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link colorMenu menuAnim wow animate__animated animate__flipInX"
-                                    href="./tiendaonline.html">Tienda Online</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link colorMenu menuAnim wow animate__animated animate__flipInX"
-                                    href="./serviciotecnico.html">Servicio Técnico</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link colorMenu menuAnim wow animate__animated animate__flipInX"
-                                    href="./nosotros.html">Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link colorMenu menuAnim wow animate__animated animate__flipInX"
-                                    href="./contacto.html#formulario">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
+                    </ul>
 
                 </div>
-            </nav>
-
-        </div>
-
-        
+            </div>
+        </nav>
 
         <section class="textos-header">
             <h1 class="T1">ServIT</h1>
             <h2 class="T2">Una Solución a tu Medida</h2>
             <h4 class="T4">Tel: +598 09X XXX XXX<h4>
-
-
+            <input id="buscador2" type="search" placeholder="Busqueda..." style=font-size:18px;>
         </section>
 
-        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+        <!-- Busqueda -->
+
+        <div class="wave" style="height: 115px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
                 style="height: 100%; width: 100%;">
                 <path d="M-26.23,177.13 C221.49,-110.02 304.45,303.45 502.54,-1.47 L518.34,154.43 L0.27,154.43 Z"
                     style="stroke: none; fill: rgba(186, 211, 221, 0.61);"></path>
             </svg></div> <!-- imagen flotante -->
         <!-- colocamos una ola flotante sobre la imagen de presentación mas o menos es la idea -->
 
-
-
-        </nav>
     </header>
 
     <main>

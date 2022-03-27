@@ -1,64 +1,60 @@
-@import '_variables';
+@import "_variables";
 
 body {
-    font-family: $tipografiatotal;
+  font-family: $tipografiatotal;
 }
 
 /* formato del header */
 header {
-    width: 100%;
-    height: 470px;
-    background: #2980b9; /* fallback for old browsers */
-    background: linear-gradient(
-        to right,
-        hsla(0, 0%, 100%, 0.63),
-        hsla(196, 93%, 70%, 0.788),
-        hsla(204, 64%, 44%, 0.322)
-        ),
-        url(../images/Cofee1920.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-size: cover;
-    /*background-attachment: fixed;*/
-    position: relative;
+  width: 100%;
+  height: 470px;
+  background: #2980b9; /* fallback for old browsers */
+  background: linear-gradient(
+      to right,
+      hsla(0, 0%, 100%, 0.63),
+      hsla(196, 93%, 70%, 0.788),
+      hsla(204, 64%, 44%, 0.322)
+    ),
+    url(../images/Cofee1920.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
 
-   .textos-header {
-        align-items: center;
-        text-align: center;
-        justify-content:space-around;
-        /*position: auto;*/
-        text-decoration: underline;
-        padding-top: 120px; /* bajo texto principal de la pagina */
-        
-        
+  .textos-header {
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    /*position: auto;*/
+    text-decoration: underline;
+    padding-top: 120px; /* bajo texto principal de la pagina */
 
-        .T1 {
-            font-size: $textosh1;   /* asignamos variable tamaño */
-            color: $textoazul;  /* asignamos variable color */
-        }    
-        .T2 {
-            font-size: $textosh2;   
-            font-weight: $anchoh2;
-            color: $textoazul;  
-        }
-    
-        .T4 {
-            font-size: $textosh4;   
-            font-weight: $anchoh4; 
-            color: $textoazul; 
-        }
+    .T1 {
+      font-size: $textosh1; /* asignamos variable tamaño */
+      color: $textoazul; /* asignamos variable color */
     }
-        
+    .T2 {
+      font-size: $textosh2;
+      font-weight: $anchoh2;
+      color: $textoazul;
+    }
+
+    .T4 {
+      font-size: $textosh4;
+      font-weight: $anchoh4;
+      color: $textoazul;
+    }
+  }
 }
 
-
-.hamburguesa {
-    /*width: 100%;*/
+/*.hamburguesa {
+    /*width: 100%;
     margin: 60px;
     /*padding:60px; */
-    /*position: relative;*/
-    /*z-index: 100;*/
-    /*margin: 0 auto;*/
-    /*background-color: rgba(41, 53, 214, 0.999);*/
-    /*height: 40px;*/
+/*position: relative;*/
+/*z-index: 100;*/
+/*margin: 0 auto;*/
+/*background-color: rgba(41, 53, 214, 0.999);
+    /*height: 40px;
     background-color: rgba(41, 53, 214, 0.999);
   
     /*ul { 
@@ -71,8 +67,8 @@ header {
         /* background-color: rgba(41, 151, 214, 0.5); /* color de fondo 
         border-radius: 5px 5px 5px 5px;  /*bordes redondeados 
         }*/
-    
-        /*li {
+
+/*li {
             a {
                 &:hover{
                     text-decoration: underline;  /*para que se marque cuando pasamos el mouse 
@@ -81,23 +77,22 @@ header {
                 }
             }       
         }           
-    }*/
-} 
+    }
+} */
 
 .colorMenu {
-    color: #6062da !important;
-    font-size: 20px !important;
-    border-radius: 20% !important;
-  }
+  color: #6062da !important;
+  font-size: 20px !important;
+  border-radius: 20% !important;
+}
 /*  color y tamaño al menu burger */
 .colorBurger {
-    color: #6062da;
-    font-size: 1.5rem;
-      
+  color: #6062da !important;
+  font-size: 1.5rem;
 }
-.navbar-collapse {
+/*.navbar-collapse {
     display: flex;
     flex-basis: 100%;
     flex-grow: 1;
     align-items: center;
-}
+}*/

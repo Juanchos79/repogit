@@ -23,7 +23,7 @@ header {
   background: linear-gradient(to right, rgba(255, 255, 255, 0.63), rgba(107, 212, 250, 0.788), rgba(40, 127, 184, 0.322)), url(../images/Cofee1920.jpg);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
-  /*background-attachment: fixed;*/
+  background-attachment: fixed;
   position: relative;
 }
 header .textos-header {
@@ -52,38 +52,38 @@ header .textos-header .T4 {
   color: darkblue;
 }
 
-.hamburguesa {
-  /*width: 100%;*/
-  margin: 60px;
-  /*padding:60px; */
-  /*position: relative;*/
-  /*z-index: 100;*/
-  /*margin: 0 auto;*/
-  /*background-color: rgba(41, 53, 214, 0.999);*/
-  /*height: 40px;*/
-  background-color: rgba(41, 53, 214, 0.999);
-  /*ul { 
-      a {
-      color: skyblue;
-      font-size: 22px;
-      font-weight: 300;   /*ancho de la fuente 
-      text-decoration: none; /* sacamos la decoración 
-      margin-right: 15px; /* separador entre menus 
-      /* background-color: rgba(41, 151, 214, 0.5); /* color de fondo 
-      border-radius: 5px 5px 5px 5px;  /*bordes redondeados 
-      }*/
-  /*li {
-          a {
-              &:hover{
-                  text-decoration: underline;  /*para que se marque cuando pasamos el mouse 
-                  cursor: pointer;
-                  background-color: #1e81b9;
-              }
-          }       
-      }           
-  }*/
-}
+/*.hamburguesa {
+    /*width: 100%;
+    margin: 60px;
+    /*padding:60px; */
+/*position: relative;*/
+/*z-index: 100;*/
+/*margin: 0 auto;*/
+/*background-color: rgba(41, 53, 214, 0.999);
+    /*height: 40px;
+    background-color: rgba(41, 53, 214, 0.999);
 
+    /*ul { 
+        a {
+        color: skyblue;
+        font-size: 22px;
+        font-weight: 300;   /*ancho de la fuente 
+        text-decoration: none; /* sacamos la decoración 
+        margin-right: 15px; /* separador entre menus 
+        /* background-color: rgba(41, 151, 214, 0.5); /* color de fondo 
+        border-radius: 5px 5px 5px 5px;  /*bordes redondeados 
+        }*/
+/*li {
+            a {
+                &:hover{
+                    text-decoration: underline;  /*para que se marque cuando pasamos el mouse 
+                    cursor: pointer;
+                    background-color: #1e81b9;
+                }
+            }       
+        }           
+    }
+} */
 .colorMenu {
   color: #6062da !important;
   font-size: 20px !important;
@@ -92,17 +92,16 @@ header .textos-header .T4 {
 
 /*  color y tamaño al menu burger */
 .colorBurger {
-  color: #6062da;
+  color: #6062da !important;
   font-size: 1.5rem;
 }
 
-.navbar-collapse {
-  display: flex;
-  flex-basis: 100%;
-  flex-grow: 1;
-  align-items: center;
-}
-
+/*.navbar-collapse {
+    display: flex;
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+}*/
 /* asignamos fondos */
 #fondogral {
   background-image: url(../images/cuaderno1920.jpg);
@@ -232,12 +231,14 @@ footer {
   display: none;
 }
 
-/*.wave {
+.wave {
   position: absolute;
+  margin-bottom: 1px;
   bottom: 0;
   width: 100%;
   border-top-color: blueviolet, border("2");
-} */
+}
+
 /*#fondogral {
   .parrafo {
     .container-fluid{
@@ -416,42 +417,32 @@ footer {
   padding: 0;
 }
 
-/*nav2 {
-  .navbar {
-    display: none;
-  }
-
-  ul {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-
-    li {
-      text-decoration: none;
-      display: inline;
-    }
-  }
-}*/
-#buscador2 {
+/*#buscador2 {
   display: inline;
-  margin-top: 220px;
-  margin-left: 10px;
+  margin-top: 40px;
+  position: center;
+  //margin-left: 10px;
+  z-index: 300;
+}*/
+@media only screen and (max-width: 3840px) and (min-width: 1921px) {
+  /*#buscador2 {
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+    align-items: center;
+  }*/
 }
-
 @media screen and (max-width: 1200px) {
   .contenedor-intro {
     width: 1200px;
   }
 
-  /*.Logo {
-    //display: flex;
-    //margin-top: 8px;
-    //margin-left: auto;
-    //padding-right: auto;
-    width: 10%;
+  /*#buscador2 {
+    margin-top: 50px;
+    align-items: center;
   }*/
-  nav2 {
-    display: inline;
+  .longitud {
+    z-index: 300;
   }
 }
 @media screen and (max-width: 810px) {
@@ -500,12 +491,6 @@ footer {
     font-weight: 300;
     color: darkblue;
   }
-
-  /*#buscador2 {
-
-    margin-top: 220px;
-    margin-left: 10px;
-  }*/
 }
 @media screen and (max-width: 768px) {
   .contenedor-intro {
@@ -549,6 +534,11 @@ footer {
     color: darkblue;
   }
 
+  /*#buscador2 {
+    //margin-left: 300px;
+
+
+  }*/
   /*.Logo {
     //display: flex;
     //margin: 5px 340px;
@@ -603,38 +593,27 @@ footer {
   }
 }*/
 @media screen and (max-width: 412px) {
-  /*.Logo {
-    //display: flex;
-    //margin: 5px 178px;
-    width: 42%;
-  }*/
-  /*nav2 {
-    display: none;
-  } */
   header {
     background: #2980b9;
     background: linear-gradient(to right, rgba(255, 255, 255, 0.63), rgba(107, 212, 250, 0.788), rgba(40, 127, 184, 0.322)), url(../images/Cofee1920_1.jpg);
-    height: 200px;
+    height: 360px;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
     overflow: hidden;
   }
 
-  .textos-header {
-    padding-top: 10px !important;
-  }
   .textos-header .T1 {
     font-size: 25px !important;
     color: darkblue;
   }
   .textos-header .T2 {
-    font-size: 15px !important;
+    font-size: 18px !important;
     font-weight: 300;
     color: darkblue;
   }
   .textos-header .T4 {
-    font-size: 15px !important;
+    font-size: 18px !important;
     font-weight: 300;
     color: darkblue;
   }
@@ -670,19 +649,19 @@ footer {
   }
 
   .Marcas {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 300;
     color: darkblue;
     text-align: center;
-    object-position: center;
+    position: relative;
     padding: 1px 0;
     background-color: rgba(30, 128, 184, 0.397);
   }
 
-  /* se repite titulo 3 en media queries 320 */
+  /* se repite titulo 3 en media queries 412 */
   .titulo3 {
     text-align: center;
-    object-position: center;
+    position: center;
     color: darkblue;
     font-size: 30px;
     margin: 0 2px 0;
@@ -760,9 +739,11 @@ footer {
   /*.conteinernav {
     position: fixed;
   }*/
-  #buscador {
-    align-items: center;
-    z-index: 20;
+  /*#buscador2 {
+    margin-left: 120px;
+  }*/
+  .longitud {
+    z-index: 300;
   }
 
   .galeria {
@@ -803,7 +784,7 @@ footer {
     /* fallback for old browsers */
     background: linear-gradient(to right, rgba(255, 255, 255, 0.63), rgba(107, 212, 250, 0.788), rgba(40, 127, 184, 0.322)), url(../images/Cofee1920_1.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    height: 200px;
+    height: 360px;
     width: auto;
     background-size: cover;
     background-attachment: fixed;
@@ -916,16 +897,6 @@ footer {
     grid-area: imagen;
   }
 
-  /*.Logo {
-    //display: flex;
-    //margin: 5px 134px;
-    width: 14%;
-    //z-index: 100;
-    //position: fixed;
-  }*/
-  /*nav2 {            // nav de vista 320px 
-    display: none;
-  }*/
   /*.menunav {
     //background-color: rgba(41, 53, 214, 0.999); 
     box-shadow: 0px 1px 1px rgba(93, 100, 199, 0.479);
@@ -966,11 +937,9 @@ footer {
   /*.conteinernav {
     position: fixed;
   }*/
-  #buscador {
-    align-items: center;
-    z-index: 20;
-  }
-
+  /*#buscador2 {
+    margin-left: 80px;
+  }*/
   .galeria {
     grid-area: galeria;
     grid-template-columns: 1fr;
