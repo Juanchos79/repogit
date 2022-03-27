@@ -23,7 +23,7 @@ header {
   background: linear-gradient(to right, rgba(255, 255, 255, 0.63), rgba(107, 212, 250, 0.788), rgba(40, 127, 184, 0.322)), url(../images/Cofee1920.jpg);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
   position: relative;
 }
 header .textos-header {
@@ -86,7 +86,6 @@ header .textos-header .T4 {
 
 .colorMenu {
   color: #6062da !important;
-  font-weight: bold !important;
   font-size: 20px !important;
   border-radius: 20% !important;
 }
@@ -222,12 +221,11 @@ footer {
 
 /* Asignamos propiedades a la clase titulo */
 .Logo {
-  display: flex;
-  margin-top: auto;
-  margin-left: auto;
-  width: 5%;
-  z-index: 100;
-  position: fixed;
+  width: 42%;
+}
+
+.longitud {
+  width: 100%;
 }
 
 .fondoNav {
@@ -418,130 +416,201 @@ footer {
   padding: 0;
 }
 
-nav2 .navbar {
-  display: none;
-}
-nav2 ul {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-}
-nav2 ul li {
-  text-decoration: none;
-  display: inline;
-}
-
-#buscador2 {
-  /* se coloca id directo sin "input" */
-  display: none;
-}
-
-@media only screen and (max-width: 3840px) and (min-width: 1921px) {
-  .navbar .navbar-expand-lg .navbar-light .fondoNav .navbar-nav {
-    display: inline;
+/*nav2 {
+  .navbar {
+    display: none;
   }
-}
-@media screen and (max-width: 1200px) {
-  .Logo {
+
+  ul {
     display: flex;
-    margin-top: 8px;
-    margin-left: auto;
-    padding-right: auto;
-    width: 10%;
+    justify-content: space-around;
+    text-align: center;
+
+    li {
+      text-decoration: none;
+      display: inline;
+    }
+  }
+}*/
+#buscador2 {
+  display: inline;
+  margin-top: 220px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .contenedor-intro {
+    width: 1200px;
   }
 
+  /*.Logo {
+    //display: flex;
+    //margin-top: 8px;
+    //margin-left: auto;
+    //padding-right: auto;
+    width: 10%;
+  }*/
   nav2 {
     display: inline;
   }
 }
 @media screen and (max-width: 810px) {
-  .Logo {
-    display: flex;
-    margin: 8px 352px;
-    padding-right: auto;
-    width: 10%;
+  .contenedor-intro {
+    width: 810px;
+    height: 470px;
   }
 
-  nav2 {
-    display: none;
+  .Marcas {
+    font-size: 22px;
+    font-weight: 300;
+    color: darkblue;
+    text-align: center;
+    object-position: center;
+    padding: 10px 0;
+    background-color: rgba(30, 128, 184, 0.397);
   }
 
-  .navbar-expand-lg {
+  .titulo1 {
+    margin-top: 50px;
+  }
+
+  .titulo {
+    margin-bottom: 20px;
+  }
+
+  /*.navbar-expand-lg {
     display: list-item;
     position: fixed;
     z-index: 200;
+  }*/
+  .textos-header {
+    padding-top: 10px !important;
+  }
+  .textos-header .T1 {
+    font-size: 25px !important;
+    color: darkblue;
+  }
+  .textos-header .T2 {
+    font-size: 15px !important;
+    font-weight: 300;
+    color: darkblue;
+  }
+  .textos-header .T4 {
+    font-size: 15px !important;
+    font-weight: 300;
+    color: darkblue;
   }
 
-  #buscador2 {
-    display: inline;
-    margin-top: 45px;
+  /*#buscador2 {
+
+    margin-top: 220px;
     margin-left: 10px;
-  }
+  }*/
 }
 @media screen and (max-width: 768px) {
-  .Logo {
-    display: flex;
-    margin: 5px 340px;
-    padding-right: auto;
-    width: 10%;
+  .contenedor-intro {
+    width: 768px;
+    height: 470px;
   }
 
-  .menunav {
-    /*background-color: rgba(41, 53, 214, 0.999); */
+  .Marcas {
+    font-size: 22px;
+    font-weight: 300;
+    color: darkblue;
+    text-align: center;
+    object-position: center;
+    padding: 10px 0;
+    background-color: rgba(30, 128, 184, 0.397);
+  }
+
+  .titulo1 {
+    margin-top: 50px;
+  }
+
+  .titulo {
+    margin-bottom: 20px;
+  }
+
+  .textos-header {
+    padding-top: 10px !important;
+  }
+  .textos-header .T1 {
+    font-size: 25px !important;
+    color: darkblue;
+  }
+  .textos-header .T2 {
+    font-size: 15px !important;
+    font-weight: 300;
+    color: darkblue;
+  }
+  .textos-header .T4 {
+    font-size: 15px !important;
+    font-weight: 300;
+    color: darkblue;
+  }
+
+  /*.Logo {
+    //display: flex;
+    //margin: 5px 340px;
+    //padding-right: auto;
+    width: 10%;
+  }*/
+  /*.menunav {                                 //  estilo de barra menu
+    /*background-color: rgba(41, 53, 214, 0.999); 
     box-shadow: 0px 1px 1px rgba(93, 100, 199, 0.479);
     padding: rigth;
     margin: 300px 0px 39px 0;
     position: fixed;
     z-index: 200;
-  }
-
-  .hamburguesa {
+  }*/
+  /*.hamburguesa {
     margin: 32px;
     z-index: 200;
     background-color: rgba(144, 150, 238, 0.425);
     width: 70%;
-  }
-  .hamburguesa ul a {
-    color: skyblue;
-    font-size: 15px;
-    font-weight: 150;
-    /*ancho de la fuente */
-    border-radius: 10px 5px 5px 5px;
-    /*bordes redondeados */
-  }
-  .hamburguesa ul li a:hover {
-    text-decoration: underline;
-    /*para que se marque cuando pasamos el mouse */
-    cursor: pointer;
-    background-color: #1e81b9;
-  }
 
+    ul {
+      a {
+        color: skyblue;
+        font-size: 15px;
+        font-weight: 150; /*ancho de la fuente 
+        border-radius: 10px 5px 5px 5px; bordes redondeados 
+      }
+
+      li {
+        a {
+          &:hover {
+            text-decoration: underline; /*para que se marque cuando pasamos el mouse 
+            cursor: pointer;
+            background-color: #1e81b9;
+          }
+        }
+      }
+    }
+  }
+  nav2 {
+    display: none;  // para 768px
+  } */
+}
+/*@media screen and (max-width: 512px) {
+  //.Logo {
+    //display: flex;
+    //margin: auto 230px;
+    //width: 8%;
+  //}
   nav2 {
     display: none;
   }
-}
-@media screen and (max-width: 512px) {
-  .Logo {
-    display: flex;
-    margin: auto 230px;
-    width: 8%;
-  }
-
-  nav2 {
-    display: none;
-  }
-}
+}*/
 @media screen and (max-width: 412px) {
-  .Logo {
-    display: flex;
-    margin: 5px 178px;
-    width: 11%;
-  }
-
-  nav2 {
+  /*.Logo {
+    //display: flex;
+    //margin: 5px 178px;
+    width: 42%;
+  }*/
+  /*nav2 {
     display: none;
-  }
-
+  } */
   header {
     background: #2980b9;
     background: linear-gradient(to right, rgba(255, 255, 255, 0.63), rgba(107, 212, 250, 0.788), rgba(40, 127, 184, 0.322)), url(../images/Cofee1920_1.jpg);
@@ -606,7 +675,7 @@ nav2 ul li {
     color: darkblue;
     text-align: center;
     object-position: center;
-    padding: 10px 0;
+    padding: 1px 0;
     background-color: rgba(30, 128, 184, 0.397);
   }
 
@@ -622,7 +691,7 @@ nav2 ul li {
   }
 
   .contenedor-intro {
-    width: 430px !important;
+    width: 412px;
     height: 470px;
   }
 
@@ -650,38 +719,42 @@ nav2 ul li {
     grid-area: imagen;
   }
 
-  .menunav {
-    background-color: rgba(121, 129, 230, 0.123);
+  /*.menunav {
+    background-color: #7981e61f;
     box-shadow: 0px 1px 1px rgba(93, 100, 199, 0.479);
     padding: rigth;
     margin: 300px 0px 39px 0;
-    /*position: fixed;*/
+    //position: fixed;
     z-index: 200;
-  }
-
-  .hamburguesa {
+  }*/
+  /*.hamburguesa {
     margin: 32px;
     z-index: 200;
     background-color: rgba(144, 150, 238, 0.425);
     width: 70%;
-  }
-  .hamburguesa ul a {
-    color: skyblue;
-    font-size: 15px;
-    font-weight: 150;
-    /*ancho de la fuente */
-    /*text-decoration: none; */
-    /* sacamos la decoración 
-    margin-right: 15px; /* separador entre menus 
-    /* background-color: rgba(41, 151, 214, 0.5); /* color de fondo */
-    border-radius: 10px 5px 5px 5px;
-    /*bordes redondeados */
-  }
-  .hamburguesa ul li a:hover {
-    text-decoration: underline;
-    /*para que se marque cuando pasamos el mouse */
-    cursor: pointer;
-    background-color: #1e81b9;
+
+    ul {
+      a {
+        color: skyblue;
+        font-size: 15px;
+        font-weight: 150; /*ancho de la fuente */
+  /*text-decoration: none; */
+  /* sacamos la decoración 
+        margin-right: 15px; /* separador entre menus 
+        /* background-color: rgba(41, 151, 214, 0.5); /* color de fondo 
+        border-radius: 10px 5px 5px 5px; /*bordes redondeados 
+      }
+
+      li {
+        a {
+          &:hover 
+            text-decoration: underline; /*para que se marque cuando pasamos el mouse 
+            cursor: pointer;
+            background-color: #1e81b9;
+          }
+        }
+      }
+    }
   }
 
   /*.conteinernav {
@@ -793,7 +866,7 @@ nav2 ul li {
     color: darkblue;
     text-align: center;
     object-position: center;
-    padding: 10px 0;
+    padding: 1px 0;
     background-color: rgba(30, 128, 184, 0.397);
   }
 
@@ -810,7 +883,7 @@ nav2 ul li {
   }
 
   .contenedor-intro {
-    width: 256px;
+    width: 320px;
     height: 210px;
   }
 
@@ -843,52 +916,53 @@ nav2 ul li {
     grid-area: imagen;
   }
 
-  .Logo {
-    display: flex;
-    margin: 5px 134px;
+  /*.Logo {
+    //display: flex;
+    //margin: 5px 134px;
     width: 14%;
-    z-index: 100;
-    position: fixed;
-  }
-
-  nav2 {
+    //z-index: 100;
+    //position: fixed;
+  }*/
+  /*nav2 {            // nav de vista 320px 
     display: none;
-  }
-
-  .menunav {
-    /*background-color: rgba(41, 53, 214, 0.999); */
+  }*/
+  /*.menunav {
+    //background-color: rgba(41, 53, 214, 0.999); 
     box-shadow: 0px 1px 1px rgba(93, 100, 199, 0.479);
     padding: rigth;
     margin: 300px 0px 39px 0;
     position: fixed;
     z-index: 200;
-  }
-
-  .hamburguesa {
+  }*/
+  /*.hamburguesa {
     margin: 32px;
     z-index: 200;
     background-color: rgba(144, 150, 238, 0.425);
     width: 70%;
-  }
-  .hamburguesa ul a {
-    color: skyblue;
-    font-size: 15px;
-    font-weight: 150;
-    /*ancho de la fuente */
-    /*text-decoration: none; */
-    /* sacamos la decoración 
-    margin-right: 15px; /* separador entre menus 
-    /* background-color: rgba(41, 151, 214, 0.5); /* color de fondo */
-    border-radius: 10px 5px 5px 5px;
-    /*bordes redondeados */
-  }
-  .hamburguesa ul li a:hover {
-    text-decoration: underline;
-    /*para que se marque cuando pasamos el mouse */
-    cursor: pointer;
-    background-color: #1e81b9;
-  }
 
+    ul {
+      a {
+        color: skyblue;
+        font-size: 15px;
+        font-weight: 150; /*ancho de la fuente */
+  /*text-decoration: none; */
+  /* sacamos la decoración 
+        margin-right: 15px; /* separador entre menus 
+        /* background-color: rgba(41, 151, 214, 0.5); /* color de fondo 
+        border-radius: 10px 5px 5px 5px; /*bordes redondeados 
+      }/*
+
+      li {
+        a {
+          &:hover {
+            text-decoration: underline; /*para que se marque cuando pasamos el mouse 
+            cursor: pointer;
+            background-color: #1e81b9;
+          }
+        }
+      }
+    }
+  }*/
   /*.conteinernav {
     position: fixed;
   }*/
