@@ -73,31 +73,39 @@
 
 .serviciotext {
   color: #fff;
-  font-size: 40px;
+  font-size: 30px;
   display: flex;
   margin: 0 10em;
-  width: 100px;
+  background-color: rgb(44, 3, 78);
+  border: rgb(75, 6, 132);
+  border-style:solid;
 }
 
 #fondogral {
   .parrafo {
     .titulo-service {
-      color: #fff !important;
-      font-size: 25px !important;
-      display: block !important;
-      border-style: outset !important;
-      border-color: rgb(75, 6, 132) !important;
-      background-color: rgb(40, 126, 184) !important;
-      /*margin: 0 10em !important;*/
-      width: auto !important;
-      justify-content: center !important;
+      color: #fff;
+      font-size: 40px;
+      display: block;
+      border-style: outset;
+      border-color: rgb(75, 6, 132);
+      background-color: rgb(40, 126, 184);
+      margin: 0 10em;
+      //width: auto;
+      justify-content: center;
     }
   }
 }
 
-.parrafo img {
+.centerimg {
   display: flex;
+  justify-content: center;
   align-items: center;
+  img {
+    border:rgb(13, 56, 175);
+    border-style:solid;
+  }
+
 }
 
 .Marcas {

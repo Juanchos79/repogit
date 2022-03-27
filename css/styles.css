@@ -254,27 +254,33 @@ footer {
 } */
 .serviciotext {
   color: #fff;
-  font-size: 40px;
+  font-size: 30px;
   display: flex;
   margin: 0 10em;
-  width: 100px;
+  background-color: #2c034e;
+  border: #4b0684;
+  border-style: solid;
 }
 
 #fondogral .parrafo .titulo-service {
-  color: #fff !important;
-  font-size: 25px !important;
-  display: block !important;
-  border-style: outset !important;
-  border-color: #4b0684 !important;
-  background-color: #287eb8 !important;
-  /*margin: 0 10em !important;*/
-  width: auto !important;
-  justify-content: center !important;
+  color: #fff;
+  font-size: 40px;
+  display: block;
+  border-style: outset;
+  border-color: #4b0684;
+  background-color: #287eb8;
+  margin: 0 10em;
+  justify-content: center;
 }
 
-.parrafo img {
+.centerimg {
   display: flex;
+  justify-content: center;
   align-items: center;
+}
+.centerimg img {
+  border: #0d38af;
+  border-style: solid;
 }
 
 .Marcas {
