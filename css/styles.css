@@ -52,38 +52,6 @@ header .textos-header .T4 {
   color: darkblue;
 }
 
-/*.hamburguesa {
-    /*width: 100%;
-    margin: 60px;
-    /*padding:60px; */
-/*position: relative;*/
-/*z-index: 100;*/
-/*margin: 0 auto;*/
-/*background-color: rgba(41, 53, 214, 0.999);
-    /*height: 40px;
-    background-color: rgba(41, 53, 214, 0.999);
-
-    /*ul { 
-        a {
-        color: skyblue;
-        font-size: 22px;
-        font-weight: 300;   /*ancho de la fuente 
-        text-decoration: none; /* sacamos la decoración 
-        margin-right: 15px; /* separador entre menus 
-        /* background-color: rgba(41, 151, 214, 0.5); /* color de fondo 
-        border-radius: 5px 5px 5px 5px;  /*bordes redondeados 
-        }*/
-/*li {
-            a {
-                &:hover{
-                    text-decoration: underline;  /*para que se marque cuando pasamos el mouse 
-                    cursor: pointer;
-                    background-color: #1e81b9;
-                }
-            }       
-        }           
-    }
-} */
 .colorMenu {
   color: #6062da !important;
   font-size: 20px !important;
@@ -96,12 +64,6 @@ header .textos-header .T4 {
   font-size: 1.5rem;
 }
 
-/*.navbar-collapse {
-    display: flex;
-    flex-basis: 100%;
-    flex-grow: 1;
-    align-items: center;
-}*/
 /* asignamos fondos */
 #fondogral {
   background-image: url(../images/cuaderno1920.jpg);
@@ -147,7 +109,6 @@ header .textos-header .T4 {
 
 .titulo3 {
   object-position: center;
-  margin: 0 180px 0;
   padding: 0 20px 0;
   background-color: rgba(30, 128, 185, 0.363);
 }
@@ -292,16 +253,6 @@ footer {
   background-color: rgba(30, 128, 184, 0.397);
 }
 
-.contenedor-intro iframe {
-  /*padding-bottom: 5px;
-    padding-top: 5px;*/
-  margin: 0 auto;
-  width: 900px;
-  height: 450px;
-  display: flex;
-  justify-items: center;
-}
-
 /* galeria de productos */
 .portafolio {
   background: rgba(111, 175, 235, 0.705);
@@ -340,7 +291,7 @@ footer {
 }
 
 .hover-galeria {
-  position: absolute;
+  position: absolute !important;
   top: 0em;
   width: 100%;
   height: 100%;
@@ -360,7 +311,15 @@ footer {
 }
 
 .imagen-1:hover .hover-galeria {
-  transform: scale(1);
+  transform: scale(1) !important;
+}
+
+/* Asignamos propiedades a la clase titulo2 */
+.titulo2 {
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .contraste-contacto {
@@ -440,20 +399,11 @@ footer {
   }
 }
 @media screen and (max-width: 1200px) {
-  .contenedor-intro {
-    width: 1200px;
-  }
-
   .longitud {
     z-index: 300;
   }
 }
 @media screen and (max-width: 810px) {
-  .contenedor-intro {
-    width: 810px;
-    height: 470px;
-  }
-
   .contenedor-cards {
     margin-left: 4% !important;
   }
@@ -466,14 +416,6 @@ footer {
     object-position: center;
     padding: 10px 0;
     background-color: rgba(30, 128, 184, 0.397);
-  }
-
-  .titulo1 {
-    margin-top: 50px;
-  }
-
-  .titulo {
-    margin-bottom: 20px;
   }
 
   .textos-header {
@@ -495,11 +437,6 @@ footer {
   }
 }
 @media screen and (max-width: 768px) {
-  .contenedor-intro {
-    width: 768px;
-    height: 470px;
-  }
-
   .Marcas {
     font-size: 22px;
     font-weight: 300;
@@ -508,14 +445,6 @@ footer {
     object-position: center;
     padding: 10px 0;
     background-color: rgba(30, 128, 184, 0.397);
-  }
-
-  .titulo1 {
-    margin-top: 50px;
-  }
-
-  .titulo {
-    margin-bottom: 20px;
   }
 
   .textos-header {
@@ -534,6 +463,142 @@ footer {
     font-size: 15px !important;
     font-weight: 300;
     color: darkblue;
+  }
+}
+@media screen and (max-width: 512) {
+  header {
+    background: #2980b9;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.63), rgba(107, 212, 250, 0.788), rgba(40, 127, 184, 0.322)), url(../images/Cofee1920_1.jpg);
+    height: 360px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .textos-header .T1 {
+    font-size: 25px !important;
+    color: darkblue;
+  }
+  .textos-header .T2 {
+    font-size: 18px !important;
+    font-weight: 300;
+    color: darkblue;
+  }
+  .textos-header .T4 {
+    font-size: 18px !important;
+    font-weight: 300;
+    color: darkblue;
+  }
+
+  .contenedor-cards {
+    flex-direction: column !important;
+    margin-left: 2% !important;
+  }
+
+  .container3 {
+    flex-direction: column;
+    margin-left: 8% !important;
+  }
+
+  #fondo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../images/cuaderno1920-1.jpg);
+    background-attachment: fixed;
+    position: relative;
+    width: fit-content;
+    height: 320px;
+  }
+
+  .galeria,
+.Marcas,
+.titulo3 {
+    display: flex;
+    flex-direction: column;
+    vertical-align: center;
+    justify-items: center;
+  }
+
+  .Marcas {
+    font-size: 18px;
+    font-weight: 300;
+    color: darkblue;
+    text-align: center;
+    position: relative;
+    padding: 1px 0;
+    background-color: rgba(30, 128, 184, 0.397);
+  }
+
+  /* se repite titulo 3 en media queries 412 */
+  .titulo3 {
+    color: darkblue;
+    font-size: 30px;
+    background-color: rgba(30, 128, 185, 0.363);
+  }
+
+  .contenedor-intro {
+    width: 412px;
+    height: 470px;
+  }
+
+  .contenedor {
+    padding: 20px 0;
+  }
+
+  .contenedor-principal {
+    height: 200px;
+  }
+
+  .hover-galeria {
+    position: absolute !important;
+    top: 0em;
+    width: 100%;
+    height: 100%;
+  }
+
+  .group {
+    grid-area: group;
+  }
+
+  .group1 {
+    grid-area: group1;
+  }
+
+  .image-1 {
+    grid-area: imagen;
+  }
+
+  .galeria {
+    grid-area: galeria;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 10%;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-areas: "group" "group1";
+  }
+
+  .group {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 8% 25% 8% 25% 8%;
+    grid-column-gap: 1px;
+    grid-row-gap: 2px;
+    grid-template-areas: "foto0" "foto1" "foto2";
+  }
+
+  .group1 {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40% 33% 33%;
+    grid-column-gap: 1px;
+    grid-row-gap: 2px;
+    grid-template-areas: "foto3" "foto4" "foto5";
   }
 }
 @media screen and (max-width: 412px) {
@@ -583,19 +648,8 @@ footer {
     height: 320px;
   }
 
-  .titulo1 {
-    margin-top: 300px;
-    /* acomodo titulos Nuestras ofertas */
-  }
-
-  .titulo {
-    margin-bottom: -60px;
-  }
-
-  .contenedor-principal,
-.Marcas,
-.titulo3,
-.contenedor-intro {
+  .Marcas,
+.titulo3 {
     display: flex;
     flex-direction: column;
     vertical-align: center;
@@ -623,19 +677,6 @@ footer {
     background-color: rgba(30, 128, 185, 0.363);
   }
 
-  .contenedor-intro {
-    width: 412px;
-    height: 470px;
-  }
-
-  .videoindex {
-    padding-bottom: 5px;
-    padding-top: 5px;
-    margin: 0 auto;
-    display: block;
-    width: 360px !important;
-  }
-
   .contenedor-principal {
     height: 150px;
   }
@@ -658,7 +699,7 @@ footer {
 
   .galeria {
     grid-area: galeria;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
     grid-template-rows: 10% 10%;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
@@ -671,8 +712,8 @@ footer {
     align-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: 25% 8% 25% 8% 25% 8%;
-    grid-column-gap: 10px;
-    grid-row-gap: 20px;
+    grid-column-gap: 1px;
+    grid-row-gap: 2px;
     grid-template-areas: "foto0" "foto1" "foto2";
   }
 
@@ -682,8 +723,8 @@ footer {
     align-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: 40% 33% 33%;
-    grid-column-gap: 10px;
-    grid-row-gap: 20px;
+    grid-column-gap: 1px;
+    grid-row-gap: 2px;
     grid-template-areas: "foto3" "foto4" "foto5";
   }
 }
@@ -732,15 +773,6 @@ footer {
     color: darkblue;
   }
 
-  .titulo1 {
-    margin-top: 5px;
-    /* acomodo titulos Nuestras ofertas */
-  }
-
-  .titulo {
-    margin-bottom: -60px;
-  }
-
   .contenedor-cards {
     flex-direction: column !important;
     margin-left: 0.1% !important;
@@ -753,8 +785,7 @@ footer {
 
   .contenedor-principal,
 .Marcas,
-.titulo3,
-.contenedor-intro {
+.titulo3 {
     display: flex;
     flex-direction: column;
     vertical-align: center;
@@ -783,28 +814,14 @@ footer {
     background-color: rgba(30, 128, 185, 0.363);
   }
 
-  .contenedor-intro {
-    width: 320px;
-    height: 210px;
-  }
-
-  .videoindex {
-    padding-bottom: 5px;
-    padding-top: 5px;
-    margin: 10px !important;
-    display: block;
-    width: 300px !important;
-  }
-
   .contenedor-principal {
     height: 300px;
   }
 
-  .contenedor {
+  /*.contenedor {
     padding: 10px;
     margin: 10px;
-  }
-
+  }*/
   .group {
     grid-area: group;
   }
@@ -817,49 +834,6 @@ footer {
     grid-area: imagen;
   }
 
-  /*.menunav {
-    //background-color: rgba(41, 53, 214, 0.999); 
-    box-shadow: 0px 1px 1px rgba(93, 100, 199, 0.479);
-    padding: rigth;
-    margin: 300px 0px 39px 0;
-    position: fixed;
-    z-index: 200;
-  }*/
-  /*.hamburguesa {
-    margin: 32px;
-    z-index: 200;
-    background-color: rgba(144, 150, 238, 0.425);
-    width: 70%;
-
-    ul {
-      a {
-        color: skyblue;
-        font-size: 15px;
-        font-weight: 150; /*ancho de la fuente */
-  /*text-decoration: none; */
-  /* sacamos la decoración 
-        margin-right: 15px; /* separador entre menus 
-        /* background-color: rgba(41, 151, 214, 0.5); /* color de fondo 
-        border-radius: 10px 5px 5px 5px; /*bordes redondeados 
-      }/*
-
-      li {
-        a {
-          &:hover {
-            text-decoration: underline; /*para que se marque cuando pasamos el mouse 
-            cursor: pointer;
-            background-color: #1e81b9;
-          }
-        }
-      }
-    }
-  }*/
-  /*.conteinernav {
-    position: fixed;
-  }*/
-  /*#buscador2 {
-    margin-left: 80px;
-  }*/
   .galeria {
     grid-area: galeria;
     grid-template-columns: 1fr;
@@ -875,8 +849,8 @@ footer {
     align-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: 33% 33% 33%;
-    grid-column-gap: 10px;
-    grid-row-gap: 20px;
+    grid-column-gap: 1px;
+    grid-row-gap: 2px;
     grid-template-areas: "foto0" "foto1" "foto2";
   }
 
@@ -886,8 +860,8 @@ footer {
     align-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: 40% 33% 33%;
-    grid-column-gap: 10px;
-    grid-row-gap: 20px;
+    grid-column-gap: 1px;
+    grid-row-gap: 2px;
     grid-template-areas: "foto3" "foto4" "foto5";
   }
 }
