@@ -36,12 +36,7 @@
 /* Asignamos propiedades a la clase titulo */
 
 .Logo {
-  //display: flex;
-  //margin-top: auto;
-  //margin-left: auto;
-  width: 42%;
-  //z-index: 100;
-  //position: fixed;
+    width: 42%;
 }
 .longitud {
   width: 100%;
@@ -58,17 +53,6 @@
 }
 
 
-.serviciotext {
-  color: #fff;
-  font-size: 30px;
-  display: flex;
-  margin: 0 10em;
-  background-color: rgb(44, 3, 78);
-  border: rgb(75, 6, 132);
-  border-style:solid;
-}  
-
-
 .parrafo2 {   // texto pagina Nsotros
   color: #fff;
   font-size: 20px;
@@ -76,7 +60,7 @@
   border-style: outset;
   border-color: rgb(75, 6, 132);
   background-color: rgb(40, 126, 184);
-  margin: 0 10em;
+  margin: 0 1em;
   justify-content: center;
 }
 .centerimg {
@@ -89,15 +73,10 @@
   }
 }
 .centervideo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
+    
   iframe {
     border:rgb(13, 56, 175);
     border-style:solid;
-    width: 560px;
-    height: 350px;
   }
 }
 
@@ -261,7 +240,16 @@ footer {
   .contenedor-cards{
     margin-left: 16% !important;
   }
-  
+  .serviciotext {
+    font-size: 28px;
+    color: #fff;
+    //display: flex;
+    //margin: 0 1em;
+    background-color: rgb(44, 3, 78);
+    border: rgb(75, 6, 132);
+    border-style:solid;
+      
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -379,14 +367,19 @@ footer {
       color: $textoazul;
     }
   }
-  .contenedor-cards{    
+  .contenedor-cards{  
+    display: flex;  
     flex-direction: column !important;
     margin-left: 2% !important;
   }
   
-  .container3 {
-    flex-direction: column;
+  .container2 {
+    flex-direction: column !important;
     margin-left: 8% !important;  
+  }
+  .carousel-inner {
+    flex-direction: column !important;
+    //margin-left: 8% !important;  
   }
 
   #fondo {
@@ -399,7 +392,10 @@ footer {
     width: fit-content;
     height: 320px;
   }
-  
+  .serviciotext {    // pagina Servicio Tecnico
+    font-size: 15px !important;
+   
+  }
   .galeria,
   .Marcas,
   .titulo3 {
@@ -686,8 +682,10 @@ footer {
       color: $textoazul;
     }
   }
-
-  
+  .serviciotext {    // pagina Servicio Tecnico
+    font-size: 15px !important;
+   
+  }
   .contenedor-cards{  
     flex-direction: column !important;
     margin-left: 0.1% !important;
