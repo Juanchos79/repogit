@@ -36,12 +36,7 @@
 /* Asignamos propiedades a la clase titulo */
 
 .Logo {
-  //display: flex;
-  //margin-top: auto;
-  //margin-left: auto;
-  width: 42%;
-  //z-index: 100;
-  //position: fixed;
+    width: 42%;
 }
 .longitud {
   width: 100%;
@@ -57,47 +52,32 @@
   border-top-color: blueviolet, border("2");
 }
 
-/*#fondogral {
-  .parrafo {
-    .container-fluid{
-      .titulo-service {
-        object-position: center;
-        color: blue;
-        margin: 0 180px 0;
-        padding: 0 20px 0;
-        background-color: rgba(30, 128, 185, 0.363);
-      }
-    }
-  }
-} */
 
-.serviciotext {
+.parrafo2 {   // texto pagina Nsotros
   color: #fff;
-  font-size: 40px;
-  display: flex;
-  margin: 0 10em;
-  width: 100px;
+  font-size: 20px;
+  display: block;
+  border-style: outset;
+  border-color: rgb(75, 6, 132);
+  background-color: rgb(40, 126, 184);
+  margin: 0 1em;
+  justify-content: center;
 }
-
-#fondogral {
-  .parrafo {
-    .titulo-service {
-      color: #fff !important;
-      font-size: 25px !important;
-      display: block !important;
-      border-style: outset !important;
-      border-color: rgb(75, 6, 132) !important;
-      background-color: rgb(40, 126, 184) !important;
-      /*margin: 0 10em !important;*/
-      width: auto !important;
-      justify-content: center !important;
-    }
+.centerimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+  border:rgb(13, 56, 175);
+  border-style:solid;
   }
 }
-
-.parrafo img {
-  display: flex;
-  align-items: center;
+.centervideo {
+    
+  iframe {
+    border:rgb(13, 56, 175);
+    border-style:solid;
+  }
 }
 
 .Marcas {
@@ -110,15 +90,6 @@
   background-color: hsla(202, 72%, 42%, 0.397);
 }
 
-.contenedor-intro iframe {
-  /*padding-bottom: 5px;
-    padding-top: 5px;*/
-  margin: 0 auto;
-  width: 900px;
-  height: 450px;
-  display: flex;
-  justify-items: center;
-}
 
 /* galeria de productos */
 
@@ -157,7 +128,7 @@
 }
 
 .hover-galeria {
-  position: absolute;
+  position: absolute !important;
   top: 0em;
   width: 100%;
   height: 100%;
@@ -180,9 +151,17 @@
 .imagen-1 {
   &:hover {
     .hover-galeria {
-      transform: scale(1);
+      transform: scale(1) !important;
     }
   }
+}
+
+/* Asignamos propiedades a la clase titulo2 */
+.titulo2 {
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 60px;
 }
 .contraste-contacto {
   display: flex;
@@ -244,31 +223,37 @@ footer {
   padding: 0;
 }
 
-/*#buscador2 {
-  display: inline;
-  margin-top: 40px;
-  position: center;
-  //margin-left: 10px;
-  z-index: 300;
-}*/
 
-@media only screen and (max-width: 3840px) and (min-width: 1921px) {
-  /*#buscador2 {
-    margin-top: 50px;
-    display: block;
-    text-align: center;
-    align-items: center;
-  }*/
+.contenedor-cards{
+  display: flex;
+  flex-direction: row;
+  margin-left: 24% !important;
+  height: 420px;
+}
+.card {
+  margin: 0 20px;
+  margin-bottom: 20px;
+}
+ 
+
+@media screen and (max-width: 1440px) {
+  .contenedor-cards{
+    margin-left: 16% !important;
+  }
+  .serviciotext {
+    font-size: 28px;
+    color: #fff;
+    //display: flex;
+    //margin: 0 1em;
+    background-color: rgb(44, 3, 78);
+    border: rgb(75, 6, 132);
+    border-style:solid;
+      
+  }
 }
 
 @media screen and (max-width: 1200px) {
-  .contenedor-intro {
-    width: 1200px;
-  }
-  /*#buscador2 {
-    margin-top: 50px;
-    align-items: center;
-  }*/
+  
   .longitud {
     //position:fixed;
     z-index: 300;
@@ -276,11 +261,11 @@ footer {
 }
 
 @media screen and (max-width: 810px) {
-  .contenedor-intro {
-    width: 810px;
-    height: 470px;
+  
+  .contenedor-cards{        // carrusel pagina Tienda Online
+    margin-left: 4% !important;
   }
-
+  
   .Marcas {
     font-size: 22px;
     font-weight: 300;
@@ -290,17 +275,8 @@ footer {
     padding: 10px 0;
     background-color: hsla(202, 72%, 42%, 0.397);
   }
-  .titulo1 {
-    margin-top: 50px; // acomodo titulos Nuestras ofertas
-  }
-  .titulo {
-    margin-bottom: 20px;
-  }
-  /*.navbar-expand-lg {
-    display: list-item;
-    position: fixed;
-    z-index: 200;
-  }*/
+  
+  
   .textos-header {
     padding-top: 10px !important;
     .T1 {
@@ -322,10 +298,7 @@ footer {
   }
 }
 @media screen and (max-width: 768px) {
-  .contenedor-intro {
-    width: 768px;
-    height: 470px;
-  }
+  
   .Marcas {
     font-size: 22px;
     font-weight: 300;
@@ -335,12 +308,8 @@ footer {
     padding: 10px 0;
     background-color: hsla(202, 72%, 42%, 0.397);
   }
-  .titulo1 {
-    margin-top: 50px; // acomodo titulos Nuestras ofertas
-  }
-  .titulo {
-    margin-bottom: 20px;
-  }
+  
+  
   .textos-header {
     padding-top: 10px !important;
     .T1 {
@@ -360,6 +329,7 @@ footer {
       color: $textoazul;
     }
   }
+<<<<<<< HEAD
  
 }
 @media screen and (max-width: 512px) {
@@ -391,12 +361,47 @@ footer {
       color: $textoazul;
     }
 
+=======
+  
+}
+
+@media screen and (max-width: 512) {
+  header {
+    background: #2980b9; // fallback for old browsers
+    background: linear-gradient(
+        to right,
+        hsla(0, 0%, 100%, 0.63),
+        hsla(196, 93%, 70%, 0.788),
+        hsla(204, 64%, 44%, 0.322)
+      ),
+      url(../images/Cofee1920_1.jpg); // W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+
+    height: 360px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+  }
+  .textos-header {
+    .T1 {
+      font-size: 25px !important;
+      color: $textoazul;
+    }
+
+    .T2 {
+      font-size: 18px !important;
+      font-weight: 300;
+      color: $textoazul;
+    }
+
+>>>>>>> Sass-5
     .T4 {
       font-size: 18px !important;
       font-weight: 300;
       color: $textoazul;
     }
   }
+<<<<<<< HEAD
   .titulo1 {
     margin-top: 1px; /* acomodo titulos Nuestras ofertas */
   }
@@ -408,6 +413,40 @@ footer {
   .Marcas,
   .titulo3,
   .contenedor-intro {
+=======
+  .contenedor-cards{  
+    display: flex;  
+    flex-direction: column !important;
+    margin-left: 2% !important;
+  }
+  
+  .container2 {
+    flex-direction: column !important;
+    margin-left: 8% !important;  
+  }
+  .carousel-inner {
+    flex-direction: column !important;
+    //margin-left: 8% !important;  
+  }
+
+  #fondo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../images/cuaderno1920-1.jpg);
+    background-attachment: fixed;
+    position: relative;
+    width: fit-content;
+    height: 320px;
+  }
+  .serviciotext {    // pagina Servicio Tecnico
+    font-size: 15px !important;
+   
+  }
+  .galeria,
+  .Marcas,
+  .titulo3 {
+>>>>>>> Sass-5
     display: flex;
     flex-direction: column;
     vertical-align: center;
@@ -426,18 +465,24 @@ footer {
 
   /* se repite titulo 3 en media queries 412 */
   .titulo3 {
+<<<<<<< HEAD
     text-align: center; // display: inline;
     position: center;
     color: darkblue;
     font-size: 30px;
     margin: 0 2px 0;
     padding: 0;
+=======
+    color: darkblue;
+    font-size: 30px;
+>>>>>>> Sass-5
     background-color: rgba(30, 128, 185, 0.363);
   }
   .contenedor-intro {
     width: 412px;
     height: 470px;
   }
+<<<<<<< HEAD
   .videoindex {
     padding-bottom: 5px;
     padding-top: 5px;
@@ -448,6 +493,21 @@ footer {
 
   .contenedor-principal {
     height: 500px;
+=======
+  
+  .contenedor {
+    padding: 20px 0;
+  }  
+  .contenedor-principal {
+    height: 200px;
+  }
+  .hover-galeria {
+    position: absolute !important;
+    top: 0em;
+    width: 100%;
+    height: 100%;
+    
+>>>>>>> Sass-5
   }
   .group {
     grid-area: group;
@@ -458,10 +518,52 @@ footer {
   .image-1 {
     grid-area: imagen;
   }
+<<<<<<< HEAD
 
 }
 
 
+=======
+  .galeria {
+    grid-area: galeria;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 10%;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-areas:
+      "group"
+      "group1";
+  }
+
+  .group {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 8% 25% 8% 25% 8%;
+    grid-column-gap: 1px;
+    grid-row-gap: 2px;
+    grid-template-areas:
+      "foto0"
+      "foto1"
+      "foto2";
+  }
+  .group1 {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40% 33% 33%;
+    grid-column-gap: 1px;
+    grid-row-gap: 2px;
+    grid-template-areas:
+      "foto3"
+      "foto4"
+      "foto5";
+  }
+}
+
+>>>>>>> Sass-5
 @media screen and (max-width: 412px) {
   header {
     background: #2980b9; // fallback for old browsers
@@ -497,6 +599,16 @@ footer {
       color: $textoazul;
     }
   }
+  .contenedor-cards{    
+    flex-direction: column !important;
+    margin-left: 2% !important;
+  }
+  
+  .container3 {
+    flex-direction: column;
+    margin-left: 8% !important;  
+  }
+
   #fondo {
     display: flex;
     flex-direction: column;
@@ -507,17 +619,9 @@ footer {
     width: fit-content;
     height: 320px;
   }
-  .titulo1 {
-    margin-top: 300px; /* acomodo titulos Nuestras ofertas */
-  }
-  .titulo {
-    margin-bottom: -60px;
-  }
 
-  .contenedor-principal,
   .Marcas,
-  .titulo3,
-  .contenedor-intro {
+  .titulo3 {
     display: flex;
     flex-direction: column;
     vertical-align: center;
@@ -544,17 +648,7 @@ footer {
     padding: 0;
     background-color: rgba(30, 128, 185, 0.363);
   }
-  .contenedor-intro {
-    width: 412px;
-    height: 470px;
-  }
-  .videoindex {
-    padding-bottom: 5px;
-    padding-top: 5px;
-    margin: 0 auto;
-    display: block;
-    width: 360px !important;
-  }
+    
 
   .contenedor-principal {
     height: 150px;
@@ -577,7 +671,7 @@ footer {
 
   .galeria {
     grid-area: galeria;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
     grid-template-rows: 10% 10%;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
@@ -592,8 +686,8 @@ footer {
     align-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: 25% 8% 25% 8% 25% 8%;
-    grid-column-gap: 10px;
-    grid-row-gap: 20px;
+    grid-column-gap: 1px;
+    grid-row-gap: 2px;
     grid-template-areas:
       "foto0"
       "foto1"
@@ -605,8 +699,8 @@ footer {
     align-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: 40% 33% 33%;
-    grid-column-gap: 10px;
-    grid-row-gap: 20px;
+    grid-column-gap: 1px;
+    grid-row-gap: 2px;
     grid-template-areas:
       "foto3"
       "foto4"
@@ -665,18 +759,23 @@ footer {
       color: $textoazul;
     }
   }
-
-  .titulo1 {
-    margin-top: 5px; /* acomodo titulos Nuestras ofertas */
+  .serviciotext {    // pagina Servicio Tecnico
+    font-size: 15px !important;
+   
   }
-  .titulo {
-    margin-bottom: -60px;
+  .contenedor-cards{  
+    flex-direction: column !important;
+    margin-left: 0.1% !important;
   }
-
+  
+  .container2 {
+    flex-direction: column;
+    margin-left: 0.1% !important;  
+  }
+  
   .contenedor-principal,
   .Marcas,
-  .titulo3,
-  .contenedor-intro {
+  .titulo3 {
     display: flex;
     flex-direction: column;
     vertical-align: center;
@@ -703,26 +802,14 @@ footer {
     padding: 0;
     background-color: rgba(30, 128, 185, 0.363);
   }
-  .contenedor-intro {
-    //margin: 1px !important;
-    width: 320px;
-    height: 210px;
-  }
-  .videoindex {
-    padding-bottom: 5px;
-    padding-top: 5px;
-    margin: 10px !important;
-    display: block;
-    width: 300px !important;
-  }
 
   .contenedor-principal {
     height: 300px;
   }
-  .contenedor {
+  /*.contenedor {
     padding: 10px;
     margin: 10px;
-  }
+  }*/
   .group {
     grid-area: group;
   }
@@ -733,50 +820,6 @@ footer {
     grid-area: imagen;
   }
 
-  /*.menunav {
-    //background-color: rgba(41, 53, 214, 0.999); 
-    box-shadow: 0px 1px 1px rgba(93, 100, 199, 0.479);
-    padding: rigth;
-    margin: 300px 0px 39px 0;
-    position: fixed;
-    z-index: 200;
-  }*/
-  /*.hamburguesa {
-    margin: 32px;
-    z-index: 200;
-    background-color: rgba(144, 150, 238, 0.425);
-    width: 70%;
-
-    ul {
-      a {
-        color: skyblue;
-        font-size: 15px;
-        font-weight: 150; /*ancho de la fuente */
-  /*text-decoration: none; */ /* sacamos la decoración 
-        margin-right: 15px; /* separador entre menus 
-        /* background-color: rgba(41, 151, 214, 0.5); /* color de fondo 
-        border-radius: 10px 5px 5px 5px; /*bordes redondeados 
-      }/*
-
-      li {
-        a {
-          &:hover {
-            text-decoration: underline; /*para que se marque cuando pasamos el mouse 
-            cursor: pointer;
-            background-color: #1e81b9;
-          }
-        }
-      }
-    }
-  }*/
-
-  /*.conteinernav {
-    position: fixed;
-  }*/
-
-  /*#buscador2 {
-    margin-left: 80px;
-  }*/
 
   .galeria {
     grid-area: galeria;
@@ -795,8 +838,8 @@ footer {
     align-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: 33% 33% 33%;
-    grid-column-gap: 10px;
-    grid-row-gap: 20px;
+    grid-column-gap: 1px;
+    grid-row-gap: 2px;
     grid-template-areas:
       "foto0"
       "foto1"
@@ -808,8 +851,8 @@ footer {
     align-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: 40% 33% 33%;
-    grid-column-gap: 10px;
-    grid-row-gap: 20px;
+    grid-column-gap: 1px;
+    grid-row-gap: 2px;
     grid-template-areas:
       "foto3"
       "foto4"
